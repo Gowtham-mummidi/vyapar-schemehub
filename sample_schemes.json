@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Credit Guarantee Fund Trust (CGTMSE)",
+    "description": "Collateral-free credit guarantee for micro and small enterprises. Loans up to ₹5 Crore.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": 50000000,
+    "official_link": "https://www.cgtmse.in/",
+    "eligibility_rules": {
+      "max_turnover": 500000000,
+      "max_investment": 100000000,
+      "min_business_age": 0,
+      "allowed_sectors": ["All"],
+      "allowed_states": ["All"],
+      "allowed_owner_categories": ["All"],
+      "required_registrations": ["udyam", "pan"],
+      "msme_categories": ["Micro", "Small"]
+    },
+    "required_documents": ["Udyam", "PAN"]
+  },
+  {
+    "name": "PM Mudra Yojana",
+    "description": "Loans up to ₹10 Lakh for non-corporate small/micro enterprises. Three tiers: Shishu (₹50K), Kishor (₹5L), Tarun (₹10L).",
+    "ministry": "Ministry of Finance",
+    "funding_type": "Loan",
+    "max_benefit_amount": 1000000,
+    "official_link": "https://www.mudra.org.in/",
+    "eligibility_rules": {
+      "max_turnover": 50000000,
+      "max_investment": 10000000,
+      "min_business_age": 0,
+      "allowed_sectors": ["All"],
+      "allowed_states": ["All"],
+      "allowed_owner_categories": ["All"],
+      "required_registrations": ["udyam"],
+      "msme_categories": ["Micro", "Small"]
+    },
+    "required_documents": ["Udyam", "Aadhaar", "PAN"]
+  },
+  {
+    "name": "Prime Minister's Employment Generation Programme (PMEGP)",
+    "description": "Credit-linked subsidy for new micro-enterprises. Up to 35% subsidy for SC/ST/women in rural areas.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 5000000,
+    "official_link": "https://www.kviconline.gov.in/",
+    "eligibility_rules": {
+      "max_turnover": 10000000,
+      "max_investment": 5000000,
+      "min_business_age": 0,
+      "allowed_sectors": ["Manufacturing", "Services"],
+      "allowed_states": ["All"],
+      "allowed_owner_categories": ["SC", "ST", "OBC", "Female", "Minority"],
+      "required_registrations": ["aadhaar", "pan", "udyam"],
+      "msme_categories": ["Micro"]
+    },
+    "required_documents": ["Aadhaar", "PAN", "Udyam"]
+  }
+]

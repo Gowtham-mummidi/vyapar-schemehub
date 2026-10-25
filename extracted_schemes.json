@@ -1,0 +1,5522 @@
+[
+  {
+    "name": "Industrial Policy 2021 – 23",
+    "description": "This policy provides fiscal incentives to Micro and Small enterprises in Andhra Pradesh. It includes reimbursements for stamp duty, power costs, and SGST, along with investment and interest subsidies.",
+    "ministry": "Department of Industries, Government of Andhra Pradesh",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 2000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "Andhra Pradesh"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Industrial Policy 2021 – 23 (Medium Enterprises)",
+    "description": "This policy offers fiscal incentives specifically for medium enterprises in Andhra Pradesh. It provides SGST reimbursement linked to direct employment generation.",
+    "ministry": "Department of Industries, Government of Andhra Pradesh",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "Andhra Pradesh"
+      ],
+      "msme_categories": [
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Special Package for Women Entrepreneurs (SC/ST/BC/Minority)",
+    "description": "A targeted incentive package for women entrepreneurs from marginalized communities in Andhra Pradesh. It offers land rebates, power cost reimbursements, and higher investment subsidies.",
+    "ministry": "Department of Industries, Government of Andhra Pradesh",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 5000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "Andhra Pradesh"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "ReSTART Finance",
+    "description": "A financial support package designed to help MSMEs recover from liquidity crises. It includes a waiver of fixed electricity charges and provides working capital loans.",
+    "ministry": "Department of Industries, Government of Andhra Pradesh",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 1000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing and allied"
+      ],
+      "allowed_states": [
+        "Andhra Pradesh"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Y.S.R Jagananna Badugu Vikasam",
+    "description": "A special industrial policy for SC and ST entrepreneurs in Andhra Pradesh. It provides comprehensive support including stamp duty reimbursement, land cost rebates, and seed capital assistance.",
+    "ministry": "Department of Industries, Government of Andhra Pradesh",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 10000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing",
+        "Service",
+        "Transport"
+      ],
+      "allowed_states": [
+        "Andhra Pradesh"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Electric Vehicle Policy 2018-23",
+    "description": "This policy promotes the manufacturing of electric vehicles and components in Andhra Pradesh. It offers fixed capital investment subsidies and clean production incentives for MSMEs.",
+    "ministry": "Department of Industries, Government of Andhra Pradesh",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 5000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Electric Vehicle manufacturing"
+      ],
+      "allowed_states": [
+        "Andhra Pradesh"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Electronics Policy 2021-24",
+    "description": "A policy to boost the electronics manufacturing sector in Andhra Pradesh. It provides investment subsidies for both brownfield and greenfield projects and interest subsidies on term loans.",
+    "ministry": "Department of Industries, Government of Andhra Pradesh",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 500000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Electronics"
+      ],
+      "allowed_states": [
+        "Andhra Pradesh"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Tourism Policy 2021-25",
+    "description": "This policy aims to incentivize tourism infrastructure development in Andhra Pradesh. It includes waivers on land conversion charges and reimbursement of electricity charges for new tourism projects.",
+    "ministry": "Department of Industries, Government of Andhra Pradesh",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Tourism"
+      ],
+      "allowed_states": [
+        "Andhra Pradesh"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "IT Policy 2021-24",
+    "description": "This policy provides incentives for IT firms in Andhra Pradesh, focusing on employment creation and quality certification. It includes one-time incentives for job creation and work-from-home hardware support.",
+    "ministry": "Department of Industries, Government of Andhra Pradesh",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 1000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "IT"
+      ],
+      "allowed_states": [
+        "Andhra Pradesh"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Oxygen Policy 2021-22",
+    "description": "A policy to encourage the production of medical oxygen in Andhra Pradesh. It provides capital subsidies and power cost reimbursements for various oxygen manufacturing technologies.",
+    "ministry": "Department of Industries, Government of Andhra Pradesh",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 3000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Oxygen Manufacturing"
+      ],
+      "allowed_states": [
+        "Andhra Pradesh"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Prime Minister Employment Generation Programme (PMEGP)",
+    "description": "A central government scheme to generate self-employment opportunities through micro-enterprises. It provides credit-linked subsidies for new projects in manufacturing and service sectors.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 2500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing",
+        "Service"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Credit Guarantee Scheme (CGTMSE)",
+    "description": "This scheme provides collateral-free credit to micro and small enterprises. It offers credit guarantees to financial institutions to encourage lending to the MSME sector.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Interest Subsidy Eligibility Certificate (ISEC)",
+    "description": "A scheme for Khadi institutions to access working capital at a concessional interest rate. The government covers the difference between the bank's lending rate and 4%.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Khadi"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Market Promotion & Development Scheme (MPDA)",
+    "description": "This scheme provides financial assistance to Khadi institutions for market promotion. It offers a modified MDA on the prime cost of Khadi and Polyvastra products.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Khadi"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Revamped Scheme of Fund for Regeneration Of Traditional Industries (SFURTI)",
+    "description": "A cluster-based development scheme to support traditional industries. It provides grants for infrastructure, skill development, and technology upgrades.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 50000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Traditional Industries"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Coir Industry Technology Upgradation Scheme (CITUS)",
+    "description": "This scheme supports the modernization and establishment of coir units. It provides financial assistance for the procurement of plant and machinery.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 25000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Science and Technology (S&T) for Coir",
+    "description": "A research-focused scheme for the coir industry. It funds the development of new machinery, environment-friendly technologies, and product diversification.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Skill Upgradation & Mahila Coir Yojana (MCY)",
+    "description": "A skill development program for coir artisans, with a special focus on women. It provides stipends to trainees and honorariums to trainers.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Export Market Promotion (EMP)",
+    "description": "This scheme assists coir exporters in participating in international trade fairs and buyer-seller meets. It covers space rent, airfare, and freight charges.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 150000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Domestic Market Promotion Scheme (DMP)",
+    "description": "A scheme to promote the domestic sale of coir products. It provides financial assistance to co-operative societies and sales depots based on their annual sales turnover.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Trade and Industry Related Functional Support Services (TIRFSS)",
+    "description": "This scheme provides functional support services to the coir industry, including export data, market surveys, and HRD programs.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Welfare Measures (PMSBY)",
+    "description": "An insurance scheme for coir workers providing coverage for death or disability due to accidents. It is implemented through the Coir Board.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Financial Support to MSMEs in ZED Certification Scheme",
+    "description": "This scheme provides financial support to MSMEs for obtaining ZED (Zero Defect Zero Effect) certification. It subsidizes the cost of assessment, rating, and hand-holding.",
+    "ministry": "Ministry of Micro Small & Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "description": "This is a welfare insurance scheme for coir workers. It provides accident insurance coverage for death or disability.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "A Scheme for Promoting Innovation, Rural Industry & Entrepreneurship (ASPIRE)",
+    "description": "This scheme provides grants for setting up incubation centers to promote innovation and entrepreneurship. It covers costs for plant and machinery for incubation centers.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 10000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Credit Linked Capital Subsidy for Technology Upgradation",
+    "description": "This scheme facilitates technology upgradation for micro and small enterprises. It provides an upfront capital subsidy to help businesses modernize their technology.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Marketing Support/Assistance to MSMEs (Bar Code)",
+    "description": "This scheme provides reimbursement for bar code registration fees to MSEs. It covers both one-time and recurring fees for a period of three years.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "GS1 India registration"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Lean Manufacturing Competitiveness for MSMEs",
+    "description": "This scheme provides financial support to industry associations or groups of MSMEs for implementing lean manufacturing techniques. It covers a significant portion of consultant fees.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Design Clinic for Design Expertise to MSMEs",
+    "description": "This scheme facilitates the development of new design strategies and products for MSMEs. It provides funding support for seminars, workshops, and project interventions.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 375000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Technology and Quality Upgradation Support to MSMEs",
+    "description": "This scheme supports MSMEs in adopting energy-efficient technologies and acquiring product certifications. It provides subsidies for energy audits, DPR preparation, and licensing.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 200000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Entrepreneurial and Managerial Development of SMEs through Incubators",
+    "description": "This scheme supports the setting up of business incubators to foster innovative ideas. It provides funding for infrastructure, training, and administrative expenses.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 6250000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Enabling Manufacturing Sector to be Competitive through QMS & QTT",
+    "description": "This scheme helps MSMEs implement Quality Management Standards and Quality Technology Tools. It provides funding for awareness campaigns and implementation support.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 250000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Building Awareness on Intellectual Property Rights (IPR)",
+    "description": "This scheme aims to build awareness about IPR among MSMEs. It provides financial assistance for seminars, pilot studies, training, and patent/GI registration.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 250000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "International Cooperation",
+    "description": "This scheme supports MSMEs in participating in international exhibitions and trade fairs. It also covers the organization of international conferences and seminars.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 2500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Marketing Assistance Scheme",
+    "description": "This scheme provides financial assistance to MSMEs for participating in international and domestic exhibitions. It covers airfare, space rent, and other exhibition-related costs.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 4500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Procurement and Marketing Support Scheme (P&MS)",
+    "description": "This scheme provides subsidies for space rent and contingency expenditures for MSMEs participating in exhibitions. It aims to enhance the marketing reach of MSEs.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 150000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing",
+        "Service"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Entrepreneurship Skill Development Programme (ESDP)",
+    "description": "This program provides skill development and entrepreneurship training to potential and existing entrepreneurs. It includes stipends for weaker sections and is free for candidates.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Assistance to Training Institutions (ATI)",
+    "description": "This scheme provides financial assistance to training institutions for infrastructure development and skill development programs. It supports both central and state-level institutions.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 25000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Micro & Small Enterprises Cluster Development (MSE-CDP)",
+    "description": "This scheme supports the development of clusters through common service facilities and infrastructure. It provides grants for setting up CFCs and industrial estates.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 150000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Marketing Hub/Exhibition Centres by Associations (Sub-scheme – MSE CDP)",
+    "description": "This sub-scheme provides grants to associations for setting up marketing hubs and exhibition centers. It requires the formation of a Special Purpose Vehicle (SPV).",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 200000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Section 8 company registration"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Infrastructure Development: Sub-scheme – MSE CDP",
+    "description": "This sub-scheme provides grants for infrastructure development in industrial estates, including power, water, and pollution control facilities. It is implemented through an SPV.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 150000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Scheme of Surveys, Studies and Policy Research",
+    "description": "This scheme funds research, surveys, and studies related to the MSME sector. Proposals are evaluated by a committee for financial support.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "National SC-ST-HUB",
+    "description": "This scheme provides support to SC/ST entrepreneurs through the National Small Industries Corporation. It facilitates various activities to promote SC/ST-owned enterprises.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Scheme of Information, Education and Communication (IEC)",
+    "description": "This scheme is implemented by the Media Cell of the Ministry of MSME to disseminate information. It follows General Financial Rules for public finance management.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Plan (S&T), Coir Board (CSS of S&T of Coir Board)",
+    "description": "This scheme provides grants to research institutions for R&D activities and infrastructure creation in the coir sector.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "ISO 9000/ISO 14001 Certification Reimbursement",
+    "description": "This scheme provides reimbursement for charges incurred in acquiring ISO 9000, ISO 14001, or HACCP certifications.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 75000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Micro Finance Programme",
+    "description": "This program provides funds to SIDBI for the 'Portfolio Risk Fund' to support micro-finance activities. It helps MFIs/NGOs in providing credit to micro-enterprises.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Performance and Credit Rating",
+    "description": "This scheme provides reimbursement of credit rating fees for micro and small enterprises. The reimbursement amount varies based on the enterprise's turnover.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 40000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Raw Material Assistance",
+    "description": "This scheme provides financial assistance to registered MSMEs for the procurement of raw materials. It helps businesses avail benefits of bulk purchases and cash discounts.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Single Point Registration",
+    "description": "This scheme provides various benefits to registered MSMEs, including free tender sets and exemption from Earnest Money Deposit. It also mandates procurement quotas for MSEs.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Janshree Bima Yojana for Khadi Artisans",
+    "description": "This insurance scheme provides coverage for death and disability to Khadi artisans. It also includes a scholarship benefit for the children of the artisans.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": 50000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Khadi"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Coir Udyami Yojana",
+    "description": "This scheme provides credit-linked subsidies for setting up coir units. It covers project costs including working capital.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "National Awards (Individual MSEs)",
+    "description": "This scheme recognizes and rewards outstanding micro and small enterprises with cash prizes.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Design Expertise to manufacturing sector",
+    "description": "This scheme provides grants to registered manufacturing MSMEs for design-related work to improve product quality and competitiveness.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 4000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Development of Production Infrastructure (DPI) Scheme – coir",
+    "description": "This scheme provides financial assistance for setting up or modernizing coir production units. It covers equipment costs for defibering and spinning units.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 900000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Infrastructure for Agro-Processing Cluster",
+    "description": "This scheme provides grants for setting up technical infrastructure in agro-processing clusters. It covers plant, machinery, and technical civil works.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 100000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Scheme for Cold chain, Value Addition and Preservation",
+    "description": "This scheme provides financial assistance for cold chain infrastructure to reduce food wastage. It covers plant, machinery, and technical civil works.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 100000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Scheme for Creation/Expansion of Food Processing & Preservation Capacities",
+    "description": "This scheme supports the creation or expansion of food processing and preservation units. It provides grants for plant, machinery, and technical civil works.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 50000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Creation of Backward and Forward Linkages",
+    "description": "This scheme provides grants to improve backward and forward linkages in the food processing sector. It supports plant and machinery costs.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "PM Formalization of Micro food processing Enterprises Scheme (PMFME)",
+    "description": "This scheme supports the formalization and upgradation of existing micro food processing enterprises. It adopts an ODOP approach and provides credit-linked capital subsidies.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Scheme for Cold chain, Value Addition and Preservation Infrastructure",
+    "description": "This scheme provides financial assistance for the development of cold chain and preservation infrastructure. It supports plant and machinery costs as well as technical civil works for food processing units.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Grant",
+    "max_benefit_amount": 100000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Operation Greens",
+    "description": "This scheme provides financial assistance for plant and machinery and technical civil works in the food processing sector. It offers higher grant percentages for FPOs and SC/ST beneficiaries.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Grant",
+    "max_benefit_amount": 500000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Setting Up/Up-gradation of Quality control/Food testing laboratories",
+    "description": "This scheme provides financial support for setting up or upgrading food testing laboratories. It covers costs for laboratory equipment, technical civil works, and technical staff emoluments.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Implementation of HACCP/ISO Standards/Food Safety/Quality Management Systems",
+    "description": "This scheme provides reimbursement for expenditures related to the implementation of food safety and quality management systems. It is currently restricted as a temporary measure.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 1700000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Modernisation of Abattoirs",
+    "description": "This scheme supports the modernization of abattoirs by providing grants for plant, machinery, and technical civil works. It is targeted at local bodies, PSUs, and cooperatives.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Research & Development, Quality Assurance, Codex and Promotional Activities",
+    "description": "This scheme provides grant-in-aid for research and development activities in the food processing sector. It covers the cost of laboratory equipment and technical civil works.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "National Mission on Food Processing (NMFP)",
+    "description": "A centrally sponsored scheme aimed at promoting food processing industries across states. Funding is shared between the Government of India and the states in varying ratios.",
+    "ministry": "Ministry of Food Processing Industries",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Food Processing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Integrated Textile Park",
+    "description": "This scheme provides support for the development of integrated textile parks. It offers grants or equity to industry associations and SPVs for project infrastructure.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Grant",
+    "max_benefit_amount": 400000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Textiles"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Integrated Processing Development Scheme (IPDS)",
+    "description": "This scheme supports the development of textile processing infrastructure. It provides grants for projects with zero liquid discharge or conventional treatment systems.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Grant",
+    "max_benefit_amount": 750000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Textiles"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Integrated Skill Development Scheme",
+    "description": "This scheme provides financial support for skill development training in the textile sector. It covers a significant portion of the training costs per individual.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Grant",
+    "max_benefit_amount": 10000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Textiles"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Comprehensive handlooms cluster development scheme (CHCDS)",
+    "description": "This scheme supports the development of handloom clusters through infrastructure and financial assistance. It is primarily provided as a grant, with equity options on a case-by-case basis.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Grant",
+    "max_benefit_amount": 400000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Handlooms"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Comprehensive handicrafts cluster development scheme (CHCDS)",
+    "description": "This scheme focuses on the development of handicrafts clusters. It provides funds for baseline data, DPR preparation, and infrastructure development.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Handicrafts"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Yarn Supply Scheme",
+    "description": "This scheme provides a price subsidy on raw materials like cotton, silk, wool, and linen yarn for handloom weavers and cooperatives.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Handlooms"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Yarn bank Scheme",
+    "description": "This scheme provides an interest-free corpus fund to registered cooperative societies and firms to establish yarn banks for raw material supply.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Loan",
+    "max_benefit_amount": 20000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Textiles"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Comprehensive Power loom Cluster Development Scheme (CPCDS)",
+    "description": "This scheme provides assistance for the development of power loom and silk mega clusters. It covers administrative and infrastructure costs, excluding land procurement.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Grant",
+    "max_benefit_amount": 500000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Textiles"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Comprehensive scheme for development of Knitting and knitwear sector under Powertex India",
+    "description": "This scheme provides financial assistance for purchasing testing equipment and machinery for training centers in the knitting and knitwear sector.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 20000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Textiles"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Additional Grant for Apparel Manufacturing Units for Integrated Textile Park(SITP)",
+    "description": "This scheme provides an additional grant to industry associations and entrepreneurial groups for apparel manufacturing units within integrated textile parks.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Grant",
+    "max_benefit_amount": 100000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Textiles"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Catalytic Development Programme (CDP) in Project Mode",
+    "description": "This scheme provides project-based funding through implementing agencies, with a focus on supporting small and marginal farmers in the textile sector.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Textiles"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Pashmina Wool Development",
+    "description": "This scheme supports Pashmina wool growers through the provision of bucks, sheltering, pasturing, fodder, and various processing and training interventions.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Textiles"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Design and Technology Upgradation",
+    "description": "This scheme provides 100% grant-in-aid for training activities and tool kits for handicrafts corporations and cooperative societies.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Grant",
+    "max_benefit_amount": 10000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Handicrafts"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Babasaheb Ambedkar Hastshilp Vikas Yojana",
+    "description": "This scheme provides support to the handicrafts sector through social, technological, marketing, financial, and cluster-specific infrastructure interventions.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Handicrafts"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Human Resource Development (HRD)",
+    "description": "This scheme provides capital and training grants to vocational training institutions and ITIs to support human resource development in the textile sector.",
+    "ministry": "Ministry of Textiles",
+    "funding_type": "Grant",
+    "max_benefit_amount": 14500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Textiles"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Plastic Park Scheme",
+    "description": "This scheme provides grant funding for the development of plastic parks, covering buildings, plants, and machinery for industry associations and SPVs.",
+    "ministry": "Ministry of Chemicals and Fertilizers",
+    "funding_type": "Grant",
+    "max_benefit_amount": 400000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Chemicals"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Chemicals Promotion Development Scheme",
+    "description": "This scheme provides financial support for studies and reports related to the chemicals sector, capped at 50% of the cost.",
+    "ministry": "Ministry of Chemicals and Fertilizers",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 750000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Chemicals"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Production Linked Incentive (PLI) Scheme for promotion of domestic manufacturing of critical Key Starting Materials (KSMs)/Drug Intermediates (DIs) and Active Pharmaceutical Ingredients (APIs)",
+    "description": "This scheme provides financial incentives to manufacturers of critical KSMs, DIs, and APIs to promote domestic production. It is based on threshold investments in greenfield projects.",
+    "ministry": "Ministry of Chemicals and Fertilizers",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Pharmaceuticals"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Bulk Drug Industrial Parks",
+    "description": "This scheme provides grants to state governments for establishing common infrastructure facilities in bulk drug parks.",
+    "ministry": "Ministry of Chemicals and Fertilizers",
+    "funding_type": "Grant",
+    "max_benefit_amount": 10000000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Pharmaceuticals"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Scheme for Promotion of Medical Device Parks",
+    "description": "This scheme provides financial assistance to state governments for creating common infrastructure facilities in medical device parks.",
+    "ministry": "Ministry of Chemicals and Fertilizers",
+    "funding_type": "Grant",
+    "max_benefit_amount": 1000000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Medical Devices"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Pharmaceutical Promotion and Development Scheme (PPDS)",
+    "description": "This scheme promotes the pharmaceutical sector through financial support for seminars, conferences, exhibitions, and export-related activities.",
+    "ministry": "Ministry of Chemicals and Fertilizers",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Pharmaceuticals"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Pharmaceutical Technology Upgradation Assistance Scheme (PTUAS)",
+    "description": "This scheme provides interest subvention on loans for pharmaceutical SMEs to upgrade their manufacturing infrastructure to WHO-GMP norms.",
+    "ministry": "Ministry of Chemicals and Fertilizers",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 40000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Pharmaceuticals"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Assistance to Pharmaceutical Industry for Common Facilities",
+    "description": "This scheme provides one-time grant-in-aid to SPVs for creating common infrastructure and facilities in pharmaceutical clusters.",
+    "ministry": "Ministry of Chemicals and Fertilizers",
+    "funding_type": "Grant",
+    "max_benefit_amount": 200000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Pharmaceuticals"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Electronics Manufacturing Clusters Scheme",
+    "description": "This scheme provides financial assistance for the development of electronics manufacturing clusters and common facility centers.",
+    "ministry": "Ministry of Electronics and Information Technology",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 3500000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Electronics"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Scheme for promotion of manufacturing of electronic components and Semi-conductors",
+    "description": "This scheme provides financial incentives for capital expenditure in the manufacturing of electronic components and semiconductors.",
+    "ministry": "Ministry of Electronics and Information Technology",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Electronics"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Production linked Incentive Scheme for large scale electronics manufacturing",
+    "description": "This scheme provides incentives on incremental sales of goods manufactured in India for eligible companies in the electronics sector.",
+    "ministry": "Ministry of Electronics and Information Technology",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Electronics"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Software Technology Park Scheme",
+    "description": "This scheme allows software companies to set up operations with benefits like customs duty and excise duty exemptions to promote growth.",
+    "ministry": "Ministry of Electronics and Information Technology",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "IT/Software"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Special Economic Zone Scheme",
+    "description": "This scheme provides various tax exemptions and single-window clearance for units operating within Special Economic Zones.",
+    "ministry": "Ministry of Electronics and Information Technology",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Export Promotion Capital Goods Scheme",
+    "description": "This scheme allows for the import of capital goods at a concessional customs duty, subject to an export obligation.",
+    "ministry": "Ministry of Electronics and Information Technology",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Small Exporters Policy (SEP)",
+    "description": "This scheme provides a 12-month insurance policy for small exporters with a turnover below Rs. 5 crore.",
+    "ministry": "Ministry of Commerce and Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": 50000000,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Small and Medium Exporters Policy",
+    "description": "This scheme offers a 12-month insurance policy for small and medium exporters, providing 90% coverage with a specific loss limit.",
+    "ministry": "Ministry of Commerce and Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 1000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Participation in International Fairs and Exhibitions with Tea Board",
+    "description": "This scheme provides subsidy for economy class airfare for one representative from India to participate in international tea fairs.",
+    "ministry": "Ministry of Commerce and Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Tea"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Promotion of Packaged Tea of Indian Origin",
+    "description": "This scheme provides reimbursement for lease or rental charges of floor area or display for marketing packaged tea of Indian origin.",
+    "ministry": "Ministry of Commerce and Industries",
+    "funding_type": "Grant",
+    "max_benefit_amount": 1200000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Tea"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Promotion of Indian Spice Brands Abroad",
+    "description": "This scheme provides interest-free loans for slotting fees and product development to spice exporters with registered brands.",
+    "ministry": "Ministry of Commerce and Industries",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Spices"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "International Trade Fairs/Meetings (Spices Board Schemes)",
+    "description": "This scheme provides reimbursement for airfare for registered spice exporters and representatives attending international trade fairs.",
+    "ministry": "Ministry of Commerce and Industries",
+    "funding_type": "Grant",
+    "max_benefit_amount": 150000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Spices"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Modified Industrial Infrastructure Upgradation Scheme (IIUS)",
+    "description": "This scheme provides financial support to State Implementation Agencies for developing technical and physical infrastructure. The government covers 50% of the project cost, excluding land.",
+    "ministry": "Ministry of Commerce and Industries",
+    "funding_type": "Grant",
+    "max_benefit_amount": 500000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Proof of past experience in project execution"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Trade Infrastructure for Export Schemes (TIES)",
+    "description": "This scheme provides financial support to Central and State agencies for creating export-related infrastructure. It covers 50% of the project cost, with higher support for North Eastern and Himalayan states.",
+    "ministry": "Ministry of Commerce & Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 200000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Integrated Development of Leather Sector",
+    "description": "This sub-scheme under the Indian Footwear Leather and Accessories Development Programme incentivizes technology upgradation in leather units. It provides a backend investment grant based on the cost of plant and machinery.",
+    "ministry": "Ministry of Commerce & Industries",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Leather",
+        "Footwear"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Copy of required documents from concerned departments"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Mega Leather, footwear and accessories Cluster (MLFAC)",
+    "description": "This scheme provides graded infrastructure assistance to Special Purpose Vehicles (SPVs) for developing leather and footwear clusters. It covers up to 50% of the eligible project cost.",
+    "ministry": "Ministry of Commerce & Industries",
+    "funding_type": "Grant",
+    "max_benefit_amount": 1250000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Leather",
+        "Footwear"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Development of Solar Parks and Ultra Mega Solar Power Projects",
+    "description": "This scheme provides Central Financial Assistance (CFA) to project developers for preparing Detailed Project Reports and developing internal/external infrastructure for solar parks. It aims to facilitate large-scale solar power generation.",
+    "ministry": "Ministry of New and Renewable Energy",
+    "funding_type": "Grant",
+    "max_benefit_amount": 2500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Renewable Energy"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Grid Connected Solar Rooftop Scheme",
+    "description": "This scheme provides Central Financial Assistance to residential consumers for installing solar rooftop systems. It also offers progressive incentives to DISCOMs for achieving capacity addition targets.",
+    "ministry": "Ministry of New and Renewable Energy",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Renewable Energy"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "CPSU Scheme Phase-II",
+    "description": "This scheme supports government producers in setting up grid-connected solar PV projects for self-use or use by other government organizations. It provides Viability Gap Funding (VGF) to bridge the cost gap.",
+    "ministry": "Ministry of New and Renewable Energy",
+    "funding_type": "Grant",
+    "max_benefit_amount": 7000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Renewable Energy"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "PM KUSUM",
+    "description": "This scheme provides financial assistance to individual farmers and FPOs for solar energy projects. The assistance is adjusted in the system cost, requiring the beneficiary to pay only the balance.",
+    "ministry": "Ministry of New and Renewable Energy",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Agriculture",
+        "Renewable Energy"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Research, Design, Development, Demonstration (RDD&D) and Manufacture of New and Renewable Energy",
+    "description": "This scheme provides financial assistance for R&D projects in the renewable energy sector. It offers up to 100% funding for government institutions and 50% for industry-partnered projects.",
+    "ministry": "Ministry of New and Renewable Energy",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Renewable Energy"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Declaration regarding non-levy of admission donations (for private colleges)"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Wind Resource Assessment in Uncovered/New Areas under NCEF Scheme",
+    "description": "This scheme provides a 40% grant of the total project cost to Indian wind energy entities for resource assessment. The remaining 60% is shared by the State Nodal Agency and the private developer.",
+    "ministry": "Ministry of New and Renewable Energy",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Renewable Energy"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Compliance with DGCA guidelines"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Bio-Technology Ignition Grant (BIG)",
+    "description": "This grant supports incubates and recognized biotech startups in their early stages. It provides financial assistance to foster innovation in the biotechnology sector.",
+    "ministry": "Ministry of Science and Technology",
+    "funding_type": "Grant",
+    "max_benefit_amount": 5000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Biotechnology"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Bio-Technology Industry Partnership Programme (BIPP)",
+    "description": "This program provides grants and soft loans to R&D-oriented SMEs in the biotechnology sector. It aims to support industry-led research and development projects.",
+    "ministry": "Ministry of Science and Technology",
+    "funding_type": "Grant",
+    "max_benefit_amount": 10000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Biotechnology"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Credit Linked Capital Subsidy (CLCS)",
+    "description": "This scheme facilitates technology upgradation for MSEs by providing capital subsidies for the induction of well-established and improved technologies.",
+    "ministry": "NABARD",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "SIDBI Make in India Soft Loan Fund for MSME (SMILE)",
+    "description": "This fund provides soft loans to existing MSMEs for equipment finance and other needs. It offers a longer repayment period of up to 10 years with a moratorium.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "SIDBI – Loan for Purchase of equipment for enterprise's Development (SPEED)",
+    "description": "This scheme provides loans for purchasing machinery from approved OEMs. It offers up to 100% of the machinery cost for both new and existing SIDBI customers.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": 20000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "SIDBI-Loan for Purchase of equipment for enterprise's Development Plus (SPEED PLUS)",
+    "description": "This scheme provides credit for the purchase of machinery from identified OEMs. It is designed for MSME units with at least 5 years of operations and stable financial performance.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": 30000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "SIDBI Trader Finance Scheme (STFS)",
+    "description": "This scheme provides working capital and need-based capital expenditure support to MSME retailers and wholesalers. It is available to businesses in existence for at least 3 years with a satisfactory financial position.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": 10000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Retail",
+        "Wholesale"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "SIDBI Retail trade loan scheme for Trade Finance (RLS)",
+    "description": "This scheme offers loans for capital expenditure and working capital to existing well-performing MSE retail and wholesale traders. It covers business premises acquisition, renovation, and equipment purchase.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": 10000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Retail",
+        "Wholesale"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Top up loan for immediate purposes (TULIP)",
+    "description": "This scheme provides top-up loans for immediate business needs such as machinery purchase, civil construction, or margin money for working capital. It requires at least 1 year of association with SIDBI and a satisfactory track record.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": 20000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "SIDBI TERM-Loan assistance for rooftop solar PV plants (STAR)",
+    "description": "This scheme provides 100% financing for the installation of on-site rooftop solar PV plants. It is available to existing and new customers with a satisfactory repayment track record.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "SIDBI Assistance to facilitate emergency response against Corona Virus (SAFE)",
+    "description": "This scheme provides emergency financial assistance to MSMEs manufacturing products or providing services related to fighting the Corona Virus. It offers term loans and working capital term loans at a fixed interest rate.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": 5000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Healthcare/COVID-related"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "SIDBI Assistance to facilitate emergency response against Corona Virus (SAFEPLUS)",
+    "description": "This scheme provides emergency working capital to MSMEs with confirmed government orders for products or services related to fighting the Corona Virus. It is linked to the turnover of the unit.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": 10000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Healthcare/COVID-related"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Refinance for Small Road Transport Operators (SRTOS)",
+    "description": "A refinance scheme specifically designed for small road transport operators. It facilitates credit access through refinancing mechanisms.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Transport"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Special Liquidity support to MSME's through NBFC's",
+    "description": "Provides financial assistance to MSMEs requiring funds for bona-fide business purposes through NBFCs. This acts as a liquidity support mechanism.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Special Refinance scheme for MSME's",
+    "description": "A special refinance scheme aimed at Micro and Small Enterprises as defined under the MSMED Act, 2006. It provides financial assistance to support these enterprises.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Special Liquidity support to MSME's through MFIs and MACS",
+    "description": "Provides financial assistance to Micro Finance borrowers and MSEs through Micro Finance Institutions and MACS. It aims to improve liquidity for micro-level enterprises.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Composite Loan",
+    "description": "A loan scheme tailored for artisans, micro-units, and village/cottage industries. It provides financial support not exceeding Rs. 25 lakh.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": 2500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Artisans",
+        "Cottage Industry"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Single Window",
+    "description": "Provides loans for fixed assets and working capital for new projects in the MSE sector. It simplifies the credit process through a single window approach.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Rehabilitation of Sick Industrial Units",
+    "description": "Provides assistance for the rehabilitation of potentially viable sick MSEs, cottage, and village units. The goal is to restore the operational health of these enterprises.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Development of Industrial Infrastructure for MSME Sector",
+    "description": "Provides financial support for the development of industrial infrastructure specifically for the MSME sector.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Infrastructure"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Integrated Infrastructural Development (IID)",
+    "description": "A scheme for public sector corporations and NGOs to develop infrastructure. The project cost ceiling is Rs. 500 lakh, with excess costs met by State/UT governments.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": 50000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Infrastructure"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Bills Re-discounting Equipment",
+    "description": "Facilitates the purchase of indigenous machinery/capital equipment where at least one party is in the small-scale sector. It involves the re-discounting of bills.",
+    "ministry": "SIDBI",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Antyodaya Anna Yojana (AAY)",
+    "description": "A welfare scheme providing 100% subsidy on food grains to the poorest of the poor living below the poverty line. It is currently implemented in specific states and union territories.",
+    "ministry": "Ministry of Consumer Affairs, Food and Public Distribution",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "Himachal Pradesh",
+        "Rajasthan",
+        "Madhya Pradesh",
+        "Chhattisgarh",
+        "Andhra Pradesh",
+        "Uttar Pradesh",
+        "Dadra & Nagar Haveli"
+      ],
+      "msme_categories": [
+        "Micro"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Self-Employment and Talent Utilization (SETU)",
+    "description": "A NITI Aayog initiative to support start-up businesses and entrepreneurs in the technology area. It focuses on setting up incubation centers and enhancing skill development to create jobs.",
+    "ministry": "Niti Aayog",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Technology"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Technology Incubation and Development of Entrepreneurs (TIDE)",
+    "description": "Provides grant-in-aid to institutions to support technology incubation and entrepreneurship development. Funds are payable in installments.",
+    "ministry": "Ministry of Communication and Information Technology",
+    "funding_type": "Grant",
+    "max_benefit_amount": 15500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Technology"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Support to International Patent Protection in Electronics and IT (SIP-EIT)",
+    "description": "Reimburses up to 50% of the total patent cost for registered MSMEs or TICs. It aims to encourage international patent filing in the electronics and IT sectors.",
+    "ministry": "Ministry of Communication and Information Technology",
+    "funding_type": "Grant",
+    "max_benefit_amount": 1500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Electronics",
+        "IT"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Software Technology Parks of India (STPI)",
+    "description": "Provides tax and duty exemptions to software companies. It is designed to promote the export of software and IT services.",
+    "ministry": "Ministry of Communication and Information Technology",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Software"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Special Economic Zone (SEZ)",
+    "description": "Offers tax and duty exemptions along with single-window clearance for medium and large industries operating within designated zones.",
+    "ministry": "Ministry of Communication and Information Technology",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Electronics Hardware Technology Park (EHTP)",
+    "description": "Provides 100% FDI, duty-free imports, and 100% tax exemptions for net foreign exchange earners in the electronics hardware sector.",
+    "ministry": "Ministry of Communication and Information Technology",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Electronics Hardware"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Export Promotion of Capital Goods (EPCG)",
+    "description": "Offers zero duty on electronic product exports and concessional 3% duty on the import of capital goods for manufacturer and merchant exporters.",
+    "ministry": "Ministry of Communication and Information Technology",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Electronics"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Duty Exemption and Remission",
+    "description": "Issues advance licenses and permits duty-free replenishment of inputs and drawback of import charges for licensed exporters.",
+    "ministry": "Ministry of Communication and Information Technology",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Deemed Exports",
+    "description": "Provides exemption of terminal excise duty against International Competitive Bidding (ICB) or offers a refund for licensed exporters.",
+    "ministry": "Ministry of Communication and Information Technology",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Development of AYUSH Clusters",
+    "description": "Provides financial support to SPVs formed by at least 15 enterprises in an existing cluster. The assistance is restricted to 60% of the project cost.",
+    "ministry": "Ministry of Health & Family Welfare Schemes",
+    "funding_type": "Grant",
+    "max_benefit_amount": 150000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "AYUSH"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Extra Mural Research in AYUSH",
+    "description": "Provides financial support for staff, equipment, and contingencies for research projects in AYUSH institutions. It is available to government and private sector research institutions.",
+    "ministry": "Ministry of Health & Family Welfare Schemes",
+    "funding_type": "Grant",
+    "max_benefit_amount": 7000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "AYUSH",
+        "Research"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Promotion of Information, Education, and Communication (IEC) in AYUSH",
+    "description": "Provides grants to drug manufacturers, entrepreneurs, and institutions for participation in fairs. The grant is limited to 50% of the cost.",
+    "ministry": "Ministry of Health & Family Welfare Schemes",
+    "funding_type": "Grant",
+    "max_benefit_amount": 100000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "AYUSH"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Promotion of International Co-operation in AYUSH",
+    "description": "Reimburses 75% of expenditure incurred on air-travel, boarding, lodging, and product display for AYUSH entrepreneurs and industry representatives at international events.",
+    "ministry": "Ministry of Health & Family Welfare Schemes",
+    "funding_type": "Grant",
+    "max_benefit_amount": 200000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "AYUSH"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Grants-in-Aid for Voluntary Agencies by NAEB",
+    "description": "Provides financial assistance to NGOs and voluntary agencies for afforestation, tree planting, and eco-development activities. It is a 100% central sector grant scheme.",
+    "ministry": "Ministry of Environment Forest and Climate",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Environment"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Waste Minimization & resource conservation",
+    "description": "Provides grants and assistance to NGOs, societies, corporates, and research institutions for studies related to environmental management and waste minimization.",
+    "ministry": "Ministry of Environment Forest and Climate",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Environment"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Capital Goods Scheme",
+    "description": "Provides a one-time grant-in-aid to MSMEs, industry associations, and R&D institutions for capital goods projects. The grant covers up to 80% of the project cost.",
+    "ministry": "Ministry of Heavy Industries and Public Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Excise duty/GST concession to PWDs",
+    "description": "Allows a concessional rate of excise duty for cars driven by or for physically handicapped persons. This reduces the financial burden on PWDs.",
+    "ministry": "Ministry of Heavy Industries and Public Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Custom Duty Concession",
+    "description": "Provides a concessional rate of customs duty for the import of selected machinery and equipment for manufacturers in the automotive sector.",
+    "ministry": "Ministry of Heavy Industries and Public Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Automotive"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Fast Track Exit Mode",
+    "description": "A support mechanism for defunct companies to get their names struck off from the register of companies. It provides a modified, simplified procedure.",
+    "ministry": "Ministry of Corporate Affairs",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "EES Filing and Information Assistance",
+    "description": "Provides assistance to defunct companies for filing loan applications and managing security/guarantee requirements.",
+    "ministry": "Ministry of Corporate Affairs",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Award of Scholarship to Young Artists in different Cultural Fields",
+    "description": "Provides a monthly scholarship to young artists in various cultural fields for a period of 2 years. It aims to support individual talent.",
+    "ministry": "Ministry of Culture",
+    "funding_type": "Grant",
+    "max_benefit_amount": 120000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Culture"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Hunar Haat",
+    "description": "A skill upgrading and training initiative that provides market linkages on a national platform for artisans and culinary experts of small and medium enterprises.",
+    "ministry": "Ministry of Minority Affairs",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Artisans",
+        "Culinary"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Scheme for Financial Support to Public Private Partnerships in Infrastructure (Viability Gap Funding Scheme)",
+    "description": "Provides financial support in the form of capital grants to infrastructure projects undertaken through PPPs to make them commercially viable. The grant can cover up to 20% of the total project cost.",
+    "ministry": "Ministry of Finance",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Infrastructure"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "Compendium-of-MSME-Schemes.pdf"
+  },
+  {
+    "name": "Prime Minister’s Employment Generation Programme (PMEGP)",
+    "description": "The scheme aims to provide financial assistance to set up self-employment ventures and generate sustainable employment opportunities in rural as well as urban areas. It focuses on generating employment for rural and unemployed youth and traditional artisans to halt occupational migration.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 2500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Non-farm sector"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro"
+      ]
+    },
+    "required_documents": [
+      "One-page online application form"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "2nd Loan for up-gradation of the existing PMEGP/MUDRA units",
+    "description": "This scheme provides financial assistance to successful and well-performing existing units for expansion and upgradation. It caters to the need for bringing new technology and automation to modernize existing units.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Loan",
+    "max_benefit_amount": 2000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": 10000000,
+      "allowed_sectors": [
+        "Manufacturing",
+        "Service",
+        "Trading"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Udyog Aadhar Memorandum (UAM)",
+      "Application form on PMEGP e-Portal"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Credit Guarantee Scheme for Micro & Small Enterprises (CGTMSE)",
+    "description": "This scheme encourages first-generation entrepreneurs to venture into self-employment by facilitating credit guarantee support for collateral-free loans. It aims to support Micro and Small enterprises that lack collateral or third-party guarantees.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": 20000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Credit Linked Capital Subsidy Component (CLCS & TU Scheme)",
+    "description": "The objective is to facilitate technology up-gradation in MSEs with state-of-the-art technology through an upfront capital subsidy. It supports both new MSEs and existing ones looking to upgrade their facilities.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 1500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Specific sub-sectors/products approved under the scheme"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Procurement and Marketing Support (PMS) scheme",
+    "description": "This scheme aims to enhance the marketability of products and services in the MSME sector. It promotes new market access initiatives and educates MSMEs about marketing topics like trade fairs, digital advertising, and public procurement.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 5000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "International Cooperation (IC) Scheme",
+    "description": "The scheme enhances the competency of MSMEs by helping them capture new markets and explore new technologies. It provides reimbursement for participation in international exhibitions and organizing international conferences.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Micro & Small Enterprises Cluster Development Programme (MSE – CDP)",
+    "description": "This program supports the sustainability and growth of MSEs by addressing common issues like technology, skills, and quality. It focuses on creating or upgrading infrastructural facilities and setting up Common Facility Centres.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 200000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Scheme of Fund for Regeneration of Traditional Industries (SFURTI)",
+    "description": "This scheme organizes traditional industries and artisans into clusters to make them competitive and sustainable. It provides support for physical infrastructure, latest machines, and skill development.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 50000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Traditional Industries"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "A Scheme for Promotion of Innovation, Rural Industries and Entrepreneurship (ASPIRE)",
+    "description": "ASPIRE sets up a network of technology and incubation centers to accelerate entrepreneurship and innovation. It aims to strengthen the competitiveness of the MSME sector, particularly in the agro-rural space.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 10000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Agro-rural"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Prescribed proposal format"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "ZED Certification Scheme",
+    "description": "This scheme enables MSMEs to manufacture quality products by inculcating Zero Defect and Zero Effect practices. It promotes energy-efficient manufacturing and provides financial assistance for certification.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Digital MSME",
+    "description": "This scheme promotes the adoption of Information and Communication Technology (ICT) tools in MSME production and business processes. It aims to digitally empower MSMEs to improve their competitiveness.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Awareness on Intellectual Property Rights (IPR)",
+    "description": "This scheme enhances awareness among MSMEs about Intellectual Property Rights to protect their ideas and business strategies. It assists them in technology upgradation and competitiveness.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Entrepreneurship and Skill Development Programme (ESDP)",
+    "description": "This scheme aims to promote new enterprises and build the capacity of existing MSMEs through training and motivation. It covers various sectors including agro-based products, hosiery, food processing, and management capacity building.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "National SC-ST Hub",
+    "description": "This hub provides professional support to SC/ST entrepreneurs to fulfill public procurement obligations and adopt better business practices. It includes various sub-schemes for credit, marketing, and registration assistance.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Assistance to Training Institutions (ATI) Scheme",
+    "description": "This scheme creates and strengthens infrastructure for entrepreneurship and skill development training programs. It provides grants to training institutions of the Ministry of MSME and state-level EDIs.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 25000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Coir Industry Technology Upgradation Scheme",
+    "description": "This scheme assists entrepreneurs in procuring plant and machinery for modernization or establishing new coir units. It provides financial assistance at 25% of the total cost of admissible items.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 25000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Udyog Aadhar",
+      "Coir Board Registration"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Skill Upgradation and Mahila Coir Yojana",
+    "description": "This scheme imparts training in coir processing and value addition to artisans and entrepreneurs. It specifically aims to provide self-employment opportunities to rural women artisans.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Work-Shed Scheme for Khadi Artisans",
+    "description": "This scheme provides financial assistance to Khadi artisans to improve their workspace and storage facilities. It aims to increase the efficiency and earnings of spinners and weavers.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Khadi"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "BPL Card"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Rojgar Yukt Gaon",
+    "description": "This scheme aims to develop Khadi-based enterprises in villages to create sustainable employment. It uses a tripartite collaborative model between the government, business, and the village community.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Khadi"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Mahatma Gandhi Institute for Rural Industrialization (MGIRI)",
+    "description": "This institute supports rural industrialization through science and technology interventions and innovations. It provides training, product testing, and design support for the KVI sector.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "KVI"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Pottery Activity under Gramodyog Vikas Yojana (GVY)",
+    "description": "This scheme provides skill development training and modern equipment to pottery artisans to increase production and income. It encourages successful potters to set up their own units.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Pottery"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Beekeeping Activity under Gramodyog Vikas Yojana (GVY)",
+    "description": "This scheme promotes scientific bee management practices to create sustainable employment and supplementary income for farmers. It provides training and assistance with bee boxes and tool kits.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Beekeeping"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Declaration of no other govt scheme benefit"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Agarbatti Making Project under Gramodyog Vikas Yojana (GVY)",
+    "description": "This scheme aims to revive the Agarbatti industry by providing training and manufacturing machines to artisans. It focuses on reducing imports and creating sustainable employment.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Agarbatti"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Aadhar Card",
+      "Voters ID",
+      "Ration Card",
+      "Declaration of no other govt scheme benefit"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Tool Rooms and Technical Institutions",
+    "description": "These institutions provide integrated development support to MSMEs through tooling facilities, consultancy, and training. They focus on sectors like general engineering, foundry, electronics, and footwear.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "General Engineering",
+        "Foundry",
+        "Electronics",
+        "Fragrance",
+        "Glass",
+        "Sports Goods",
+        "Footwear"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "E BOOK OF MSME SCHEMES.pdf"
+  },
+  {
+    "name": "Credit Linked Capital Subsidy for Technology Upgradation (CLCSS)",
+    "description": "This scheme facilitates technology upgradation for Micro and Small Enterprises by providing institutional finance for proven technologies. It supports both new projects and the upgradation of existing ones in specific approved sub-sectors.",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 1500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "51 specific sub-sectors"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "IJCRT2103170.pdf"
+  },
+  {
+    "name": "Credit Guarantee Trust Fund for Micro & Small Enterprises (CGTMSE)",
+    "description": "This scheme provides collateral-free credit to Micro and Small Enterprises by guaranteeing a portion of the loan amount. It is jointly established by the Ministry of MSME and SIDBI.",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": 10000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "IJCRT2103170.pdf"
+  },
+  {
+    "name": "2% Interest Subvention Scheme for MSMEs 2018",
+    "description": "This scheme provides interest relief to manufacturing and service enterprises to encourage productivity and formalization through GST registration. It reduces the cost of credit for eligible MSMEs.",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing",
+        "Service",
+        "Trading"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "GSTN Number"
+    ],
+    "_source_file": "IJCRT2103170.pdf"
+  },
+  {
+    "name": "INR 20,000 crores Subordinate Debt for Stressed MSMEs",
+    "description": "This scheme provides financial support to stressed or NPA-classified MSMEs to help them sustain and revive operations. It allows promoters to infuse debt as equity to maintain debt-equity ratios.",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "funding_type": "Loan",
+    "max_benefit_amount": 7500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "IJCRT2103170.pdf"
+  },
+  {
+    "name": "Micro & Small Enterprises Cluster Development Programme (MSE-CDP)",
+    "description": "Supports the sustainability and growth of MSEs by addressing common issues through infrastructure development and the creation of Common Facility Centres. It provides government assistance for up to 80% of project costs for facilities and 70% for infrastructure.",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 300000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "Coir Vikas Yojana",
+    "description": "An umbrella scheme for the development of the coir industry, covering research, skill development, and market promotion. It includes sub-schemes like Mahila Coir Yojana to provide training and self-employment to rural women.",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Coir"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Udyam Registration"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "Procurement and Marketing Support (PMS) Scheme",
+    "description": "Aims to promote market access for MSMEs by facilitating participation in trade fairs and exhibitions. It also supports capacity building in packaging, e-commerce, and barcoding.",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing",
+        "Service"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Udyam Registration"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "National SC-ST Hub Scheme",
+    "description": "Provides professional support to SC/ST entrepreneurs to facilitate capacity building, market linkages, and finance. It offers various subsidies, including 25% on plant and machinery and reimbursements for testing and registration fees.",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 2500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "National Scheduled Caste and Scheduled Tribe Hub (NSSH)",
+    "description": "Provides professional support to SC/ST entrepreneurs to fulfill public procurement obligations and leverage Stand up India initiatives. It offers various sub-schemes for capacity building, market linkages, finance facilitation, and tender bid participation.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 100000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "A Scheme for Promotion of Innovation, Rural Industry and Entrepreneurship (ASPIRE)",
+    "description": "Sets up a network of Livelihood Business Incubators (LBIs) in rural and underserved areas to promote innovation and entrepreneurship. It aims to generate employment in the agro-rural sector and provide skilled human capital to industrial clusters.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 10000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Agro-rural"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "Khadi Gramodyog Vikas Yojana",
+    "description": "An umbrella scheme aimed at increasing productivity and wages of Khadi artisans and improving infrastructure for Khadi production. It includes components for interest subsidies, workshed construction, and development of village industries like pottery and beekeeping.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 2500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Khadi and Village Industries"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Aadhar Card",
+      "Identity Card issued by Government"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "Promotion of MSMEs in NER & Sikkim",
+    "description": "Provides financial support for infrastructure development to enhance productivity and competitiveness of MSMEs in the North Eastern Region and Sikkim. It supports common facilities, industrial estates, and tourism-related infrastructure.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 150000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "NER",
+        "Sikkim"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Project proposal"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "PM Vishwakarma",
+    "description": "Aims to recognize artisans and craftspeople, providing them with skill upgradation, modern toolkits, and collateral-free credit. It also offers incentives for digital transactions and marketing support to help scale their enterprises.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Loan",
+    "max_benefit_amount": 300000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "18 specified trades"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "MSME Sustainable (ZED) Certification",
+    "description": "Encourages MSMEs to adopt Zero Defect Zero Effect practices to enhance quality, productivity, and environmental consciousness. It provides subsidies for certification costs, testing, and technology upgradation.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 300000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "UDYAM registration"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "MSME Innovative (Incubation, IPR and Design)",
+    "description": "A holistic approach to promote innovation through incubation, design interventions, and intellectual property protection. It provides financial assistance for developing innovative ideas, design projects, and patent/trademark registration.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 4000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "UDYAM registration",
+      "UAM"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "MSME Competitive (Lean) Scheme",
+    "description": "Enhances the competitiveness of MSMEs by applying lean manufacturing techniques to reduce waste and optimize resources. It offers financial support for implementation costs across basic, intermediate, and advanced levels.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 216000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "UDYAM registration"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "Self Reliant India (SRI) Fund",
+    "description": "The SRI Fund is designed to provide growth capital to viable MSMEs through equity, quasi-equity, and debt instruments. It aims to support MSMEs in scaling their businesses, moving towards stock exchange listings, and becoming national or international champions.",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "funding_type": "Equity",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "Raising and Accelerating MSME Performance (RAMP)",
+    "description": "RAMP is a World Bank-supported scheme aimed at improving MSME access to markets, finance, and technology. It focuses on strengthening institutions at the central and state levels and enhancing collaboration to promote MSME development.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "MSMESchemebooklet2025-26.pdf"
+  },
+  {
+    "name": "Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE)",
+    "description": "This scheme provides collateral-free credit to the micro and small enterprise sector by offering a guarantee cover to lending institutions. It aims to encourage banks to provide loans to new and existing MSEs without the requirement of third-party guarantees or collateral.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": 20000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Rs 20,000 crore Subordinate debt for stressed MSMEs",
+    "description": "This scheme provides credit to promoters of stressed or NPA-classified MSMEs to infuse as equity into their units. It aims to sustain and revive operational MSMEs by enhancing liquidity and maintaining debt-equity ratios.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Loan",
+    "max_benefit_amount": 7500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Promotion of MSMEs in NER and Sikkim",
+    "description": "This scheme supports MSMEs in the North-Eastern Region and Sikkim by addressing common issues related to technology, tooling, and skilling. It provides funding for new technology centers, industrial estate development, and capacity building for officials.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Grant",
+    "max_benefit_amount": 100000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "North-East Region",
+        "Sikkim"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Design Expertise to Manufacturing MSME sector",
+    "description": "This scheme aims to bring the Indian manufacturing sector and design fraternity onto a common platform. It provides expert advice and cost-effective solutions for real-time design problems to foster new product development and value addition.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 4000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Udyam Registration"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Lean Manufacturing Competitiveness Scheme (LMCS)",
+    "description": "The scheme enhances the manufacturing competitiveness of MSMEs through the application of Lean Manufacturing techniques. It focuses on reducing waste, increasing productivity, and inculcating a culture of continuous improvement.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": 3600000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Udyam Registration"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Digital MSME Scheme",
+    "description": "This scheme motivates MSMEs to adopt ICT tools and applications in their production and business processes. The goal is to improve their competitiveness in both national and international markets.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Udyam Registration"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Support for Entrepreneurial and Managerial Development of MSMEs through Incubators",
+    "description": "This scheme supports untapped creativity and the adoption of latest technologies in manufacturing and knowledge-based innovative MSMEs. It provides financial assistance for idea nurturing, machinery procurement, and seed capital.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Grant",
+    "max_benefit_amount": 10000000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Building awareness on Intellectual Property Rights (IPR)",
+    "description": "This scheme enhances awareness of IPR amongst MSMEs to encourage creative intellectual endeavor. It provides reimbursement for patent, trademark, and GI registration to protect technological innovations.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Subsidy",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Udyam Registration"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Public Procurement Policy (PPP) for MSEs Order, 2012",
+    "description": "This policy mandates 25% annual procurement from MSEs by Central Ministries, Departments, and CPSEs. It provides various benefits like tender fee exemption and relaxation in prior turnover/experience criteria.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Guarantee",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "Manufacturing",
+        "Services"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small"
+      ]
+    },
+    "required_documents": [
+      "Udyam Registration"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Rs 20,000 crores Subordinate Debt for Stressed MSMEs",
+    "description": "This scheme provides support to promoters of stressed or NPA MSMEs to sustain and revive their units. It allows promoters to infuse the debt as equity to maintain debt-equity ratios.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Loan",
+    "max_benefit_amount": 7500000,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Rs 50,000 cr. Equity infusion for MSMEs through Fund of Funds",
+    "description": "This scheme provides equity funding for MSMEs with growth potential and viability. It is operated through a Mother Fund and daughter funds to leverage private capital and expand MSME size.",
+    "ministry": "Ministry of MSME",
+    "funding_type": "Equity",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Fund of Funds (FoF) for MSMEs",
+    "description": "A fund with a corpus of Rs 10,000 crores designed to provide equity funding for MSMEs with growth potential and viability. It operates through a Mother Fund and daughter funds to leverage Rs 50,000 crore in total funding to expand MSME size and capacity.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Equity",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": null,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  },
+  {
+    "name": "Emergency Credit Line (Collateral-free Automatic Loans)",
+    "description": "Provides collateral-free automatic loans to businesses and MSMEs up to 20% of their entire outstanding credit as of February 29, 2020. The scheme includes a 4-year tenor with a 12-month moratorium on principal repayment and 100% credit guarantee cover to banks and NBFCs.",
+    "ministry": "Ministry of Micro, Small & Medium Enterprises",
+    "funding_type": "Loan",
+    "max_benefit_amount": null,
+    "eligibility_rules": {
+      "max_turnover": 1000000000,
+      "max_investment": null,
+      "allowed_sectors": [
+        "All"
+      ],
+      "allowed_states": [
+        "All"
+      ],
+      "msme_categories": [
+        "Micro",
+        "Small",
+        "Medium"
+      ]
+    },
+    "required_documents": [
+      "Not specified"
+    ],
+    "_source_file": "msme_e-book_2.pdf"
+  }
+]

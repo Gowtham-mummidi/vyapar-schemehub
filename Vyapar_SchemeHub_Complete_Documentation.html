@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vyapar SchemeHub - Comprehensive Project Documentation & Technical Walkthrough</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+  @page {
+    size: A4;
+    margin: 20mm 15mm 20mm 15mm;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+    margin: 0;
+    padding: 25px;
+    background-color: #ffffff;
+    font-size: 13.5px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #0f172a;
+    font-weight: 700;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    page-break-after: avoid;
+  }
+
+  h1 {
+    font-size: 26px;
+    color: #1e3a8a;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 8px;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 19px;
+    color: #1e40af;
+    border-bottom: 1.5px solid #e2e8f0;
+    padding-bottom: 6px;
+    margin-top: 28px;
+  }
+
+  h3 {
+    font-size: 15px;
+    color: #334155;
+    margin-top: 18px;
+  }
+
+  h4 {
+    font-size: 13.5px;
+    color: #475569;
+  }
+
+  p {
+    margin: 0.6em 0;
+  }
+
+  code {
+    font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
+    font-size: 11.5px;
+    background: #f1f5f9;
+    padding: 2px 5px;
+    border-radius: 4px;
+    color: #0f172a;
+    border: 1px solid #e2e8f0;
+  }
+
+  pre {
+    background: #0f172a;
+    color: #f8fafc;
+    padding: 14px 18px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 12px 0;
+    page-break-inside: avoid;
+  }
+
+  pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    border: none;
+    font-size: 11px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 12px;
+    page-break-inside: avoid;
+  }
+
+  th, td {
+    padding: 8px 10px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f8fafc;
+  }
+
+  ul, ol {
+    margin: 0.5em 0;
+    padding-left: 22px;
+  }
+
+  li {
+    margin-bottom: 4px;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 7px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 9999px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    text-transform: uppercase;
+  }
+
+  .badge-post { background: #dcfce7; color: #15803d; }
+  .badge-get { background: #dbeafe; color: #1d4ed8; }
+  .badge-put { background: #fef3c7; color: #b45309; }
+  .badge-del { background: #fee2e2; color: #b91c1c; }
+
+  .callout {
+    border-left: 4px solid #3b82f6;
+    background-color: #eff6ff;
+    padding: 12px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 14px 0;
+    page-break-inside: avoid;
+  }
+
+  .callout-title {
+    font-weight: 700;
+    color: #1e40af;
+    margin-bottom: 4px;
+  }
+
+  .callout-success {
+    border-left-color: #10b981;
+    background-color: #ecfdf5;
+  }
+  .callout-success .callout-title { color: #047857; }
+
+  .callout-warning {
+    border-left-color: #f59e0b;
+    background-color: #fffbeb;
+  }
+  .callout-warning .callout-title { color: #b45309; }
+
+  .page-break {
+    page-break-before: always;
+  }
+
+  .header-card {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+    color: #ffffff;
+    padding: 24px 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+  }
+  .header-card h1 {
+    color: #ffffff;
+    border: none;
+    margin: 0 0 6px 0;
+    font-size: 28px;
+  }
+  .header-card p {
+    color: #93c5fd;
+    margin: 0;
+    font-size: 14px;
+  }
+  .header-meta {
+    margin-top: 14px;
+    display: flex;
+    gap: 20px;
+    font-size: 11.5px;
+    color: #cbd5e1;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 10px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 12px 0;
+  }
+  .card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    background: #f8fafc;
+  }
+  .card h4 {
+    margin: 0 0 6px 0;
+    color: #1e3a8a;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-card">
+  <h1>Vyapar SchemeHub</h1>
+  <p>AI-Powered MSME Government Scheme Discovery, Verification & Recommendation Engine</p>
+  <div class="header-meta">
+    <div><strong>Document:</strong> Complete Architecture & Implementation Manual</div>
+    <div><strong>Version:</strong> 2.0 (Resilient Production Release)</div>
+    <div><strong>Stack:</strong> React 19 + FastAPI + Supabase + Qdrant + Google Gemini</div>
+  </div>
+</div>
+
+<h2>Table of Contents</h2>
+<ol>
+  <li><strong>Executive Summary & Business Objectives</strong></li>
+  <li><strong>Complete System Architecture & High-Level Dataflow</strong></li>
+  <li><strong>Database Architecture & Relational Schema</strong></li>
+  <li><strong>Backend Deep Dive (FastAPI Services & APIs)</strong>
+    <ul>
+      <li>Configuration & Environment Architecture</li>
+      <li>Server Lifespan & Initialization</li>
+      <li>API Endpoints & Routing Surface</li>
+      <li>Eligibility & Rules Evaluation Engine</li>
+      <li>Recommendation Engine & Scoring</li>
+      <li>RAG Vector Search & Google Gemini AI Chatbot</li>
+      <li>OCR Document Verification Pipeline</li>
+      <li>Ingestion & Vectorization Pipeline</li>
+    </ul>
+  </li>
+  <li><strong>Frontend Deep Dive (React 19 + Vite Application)</strong>
+    <ul>
+      <li>Application Entry Point & Architecture</li>
+      <li>Authentication & Token State Management</li>
+      <li>Component Hierarchy & Navigation</li>
+      <li>All Pages & User Flows</li>
+      <li>AI Scheme Assistant Chatbot Component</li>
+    </ul>
+  </li>
+  <li><strong>Data Ingestion & Dataset Tools</strong></li>
+  <li><strong>Recent Resiliency Fixes & Architectural Upgrades</strong></li>
+  <li><strong>Setup, Execution & Operations Guide</strong></li>
+</ol>
+
+<hr>
+
+<h2>1. Executive Summary & Business Objectives</h2>
+<p>
+  India has over 63 million Micro, Small, and Medium Enterprises (MSMEs) contributing nearly 30% of the country's GDP. The Central and State Governments offer hundreds of credit-linked subsidies, technology upgradation schemes, collateral-free credit guarantees, and export promotion incentives (e.g., CGTMSE, PMEGP, CLCSS, ZED Certification).
+</p>
+<p>
+  However, MSMEs struggle with:
+</p>
+<ul>
+  <li><strong>Information Asymmetry:</strong> Complex guidelines spanning hundreds of pages across different ministries.</li>
+  <li><strong>Eligibility Uncertainty:</strong> Inability to decipher if their business size, turnover, sector, or social category qualifies.</li>
+  <li><strong>Documentation Burdens:</strong> Confusing required documents leading to high application rejection rates.</li>
+</ul>
+<p>
+  <strong>Vyapar SchemeHub</strong> solves this by introducing:
+</p>
+<ol>
+  <li><strong>Intelligent Recommendation Engine:</strong> Rule-based matching engine that cross-references 213+ government schemes with business profiles.</li>
+  <li><strong>Explainable AI (XAI):</strong> Detailed justifications of eligibility and non-eligibility breakdowns (e.g., exactly why a business was rejected based on turnover or location).</li>
+  <li><strong>RAG-Powered AI Scheme Assistant:</strong> Real-time chatbot utilizing Google Gemini and high-dimensional semantic search over government scheme documents with an automatic SQL fallback.</li>
+  <li><strong>Automated Document OCR:</strong> Computer vision verification extracting Udyam numbers, PAN, GST, and turnover directly from official certificates.</li>
+</ol>
+
+<div class="page-break"></div>
+
+<h2>2. Complete System Architecture & High-Level Dataflow</h2>
+
+<div class="callout">
+  <div class="callout-title">Architecture Summary</div>
+  <p>The system is split into two primary tiers: a Vite-powered React Single Page Application (SPA) communicating over RESTful JSON with a high-performance Python FastAPI backend, supported by Supabase PostgreSQL, Qdrant Vector Cloud, and Google Gemini Generative AI.</p>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Layer</th>
+      <th>Technologies</th>
+      <th>Key Responsibility</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Frontend Client</strong></td>
+      <td>React 19, Vite, Tailwind CSS, Lucide React, Axios</td>
+      <td>Responsive UI, profile creation form, matched scheme visualization, document upload interface, and conversational AI assistant widget.</td>
+    </tr>
+    <tr>
+      <td><strong>API Gateway / Backend</strong></td>
+      <td>FastAPI, Uvicorn, Pydantic v2, Python 3.10+</td>
+      <td>CORS negotiation, JWT authentication, rule verification, API endpoints for profiles, schemes, recommendations, chat, and OCR.</td>
+    </tr>
+    <tr>
+      <td><strong>Relational Database</strong></td>
+      <td>PostgreSQL (Supabase) / SQLite fallback (SQLAlchemy ORM)</td>
+      <td>Stores user records, 213+ structured scheme rules, MSME profiles, user recommendations, and OCR verification logs.</td>
+    </tr>
+    <tr>
+      <td><strong>Vector Database</strong></td>
+      <td>Qdrant Cloud / Local Vector Engine (768-dim embeddings)</td>
+      <td>Stores semantic chunks of government policy guidelines and PDF circulars for semantic retrieval.</td>
+    </tr>
+    <tr>
+      <td><strong>Artificial Intelligence</strong></td>
+      <td>Google Gemini 1.5 / 2.0 Flash / Pro APIs</td>
+      <td>Synthesizes RAG contexts into clear, structured natural language answers for general and scheme-specific user queries.</td>
+    </tr>
+    <tr>
+      <td><strong>Document Intelligence</strong></td>
+      <td>PyPDF2, Tesseract OCR / Gemini Vision OCR</td>
+      <td>Parses business documents, extracts registration IDs, and reconciles claims against official certificates.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>High-Level Dataflow Diagram</h3>
+<pre>
++-----------------------------------------------------------------------------------------+
+|                                    USER BROWSER                                         |
+|                                                                                         |
+|   +-------------------+    +----------------------+    +----------------------------+   |
+|   |  Profile Form     |    |  Recommendations UI  |    | Floating AI Chatbot Widget |   |
+|   +---------+---------+    +----------+-----------+    +-------------+--------------+   |
++-------------|-------------------------|------------------------------|------------------+
+              |                         |                              |
+              | (JSON Payload)          | (GET /recommendations)       | (POST /schemes/chat)
+              v                         v                              v
++-----------------------------------------------------------------------------------------+
+|                               FASTAPI BACKEND ROUTER                                    |
+|                                                                                         |
+|   +-------------------+    +----------------------+    +----------------------------+   |
+|   | /api/v1/business  |    | /recommendations     |    | /api/v1/schemes/chat       |   |
+|   +---------+---------+    +----------+-----------+    +-------------+--------------+   |
+|             |                         |                              |                  |
+|             v                         v                              v                  |
+|   +-------------------+    +----------------------+    +----------------------------+   |
+|   | BusinessProfile   |    | Eligibility Engine   |    | RAG Service                |   |
+|   | ORM Service       |    | Rule Matching Logic  |    | 1. Query Vectorization     |   |
+|   +---------+---------+    +----------+-----------+    | 2. Qdrant / SQL Fallback   |   |
+|             |                         |                | 3. Gemini Generation       |   |
++-------------|-------------------------|----------------|-------------+--------------+---+
+              |                         |                |             |
+              v                         v                v             v
+       +---------------+         +---------------+ +-----------+ +---------------+
+       | PostgreSQL DB |         | 213+ Schemes  | |  Qdrant   | | Google Gemini |
+       |  (Supabase)   |         | Schema Rules  | | Vector DB | |      LLM      |
+       +---------------+         +---------------+ +-----------+ +---------------+
+</pre>
+
+<div class="page-break"></div>
+
+<h2>3. Database Architecture & Relational Schema</h2>
+<p>
+  The persistence layer uses SQLAlchemy ORM mapping to PostgreSQL (or SQLite locally). The primary schema is modeled across four core entities:
+</p>
+
+<h3>Entity Relationship Breakdown</h3>
+
+<h4>1. <code>schemes</code> Table</h4>
+<p>Holds structured government scheme definitions, criteria rules, financial subsidies, and document requirements.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Constraints</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>id</code></td><td>UUID / Integer</td><td>PK, Autoincrement</td><td>Unique identifier for the scheme</td></tr>
+    <tr><td><code>name</code></td><td>String(255)</td><td>Indexed, Not Null</td><td>Official name (e.g. CGTMSE, PMEGP)</td></tr>
+    <tr><td><code>short_name</code></td><td>String(50)</td><td>Nullable</td><td>Common acronym or abbreviation</td></tr>
+    <tr><td><code>ministry</code></td><td>String(255)</td><td>Not Null</td><td>Governing ministry (e.g., Ministry of MSME)</td></tr>
+    <tr><td><code>description</code></td><td>Text</td><td>Not Null</td><td>Comprehensive description of benefits and scope</td></tr>
+    <tr><td><code>funding_type</code></td><td>String(50)</td><td>Not Null</td><td>Subsidy, Loan, Credit Guarantee, Grant</td></tr>
+    <tr><td><code>max_benefit_amount</code></td><td>Numeric / Float</td><td>Nullable</td><td>Maximum financial benefit in INR (₹)</td></tr>
+    <tr><td><code>eligibility_rules</code></td><td>JSON / Text</td><td>Not Null</td><td>Structured rules (turnover max/min, sectors, categories)</td></tr>
+    <tr><td><code>required_documents</code></td><td>JSON / Array</td><td>Not Null</td><td>List of required certificates (PAN, Aadhaar, Udyam)</td></tr>
+    <tr><td><code>application_url</code></td><td>String(500)</td><td>Nullable</td><td>Direct URL to official national/state portal</td></tr>
+    <tr><td><code>is_active</code></td><td>Boolean</td><td>Default True</td><td>Active state flag for recommendations</td></tr>
+  </tbody>
+</table>
+
+<h4>2. <code>business_profiles</code> Table</h4>
+<p>Stores the MSME business attributes used by the eligibility engine.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Constraints</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>id</code></td><td>UUID / Integer</td><td>PK</td><td>Unique profile identifier</td></tr>
+    <tr><td><code>user_id</code></td><td>String(255)</td><td>Indexed, Unique</td><td>Supabase Auth User UUID</td></tr>
+    <tr><td><code>business_name</code></td><td>String(255)</td><td>Not Null</td><td>Registered enterprise name</td></tr>
+    <tr><td><code>enterprise_type</code></td><td>String(50)</td><td>Not Null</td><td>Micro, Small, Medium</td></tr>
+    <tr><td><code>sector</code></td><td>String(100)</td><td>Not Null</td><td>Manufacturing, Service, Trading</td></tr>
+    <tr><td><code>annual_turnover</code></td><td>Numeric / Float</td><td>Not Null</td><td>Reported annual turnover in INR (₹)</td></tr>
+    <tr><td><code>investment_plant_machinery</code></td><td>Numeric / Float</td><td>Not Null</td><td>Plant, machinery or equipment investment (₹)</td></tr>
+    <tr><td><code>state</code></td><td>String(100)</td><td>Not Null</td><td>State or Union Territory of operation</td></tr>
+    <tr><td><code>district</code></td><td>String(100)</td><td>Nullable</td><td>District name</td></tr>
+    <tr><td><code>gender</code></td><td>String(20)</td><td>Not Null</td><td>Male, Female, Other (for women schemes)</td></tr>
+    <tr><td><code>social_category</code></td><td>String(50)</td><td>Not Null</td><td>General, OBC, SC, ST, Minority</td></tr>
+    <tr><td><code>has_udyam</code></td><td>Boolean</td><td>Default False</td><td>Whether enterprise has Udyam registration</td></tr>
+    <tr><td><code>udyam_number</code></td><td>String(50)</td><td>Nullable</td><td>Udyam Registration Number (UDYAM-XX-00-0000000)</td></tr>
+  </tbody>
+</table>
+
+<h4>3. <code>recommendations</code> Table</h4>
+<p>Logs calculated matches, scores, and Explainable AI rationales for each business.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Column</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>id</code></td><td>UUID / Integer</td><td>Primary Key</td></tr>
+    <tr><td><code>business_profile_id</code></td><td>FK</td><td>References <code>business_profiles.id</code></td></tr>
+    <tr><td><code>scheme_id</code></td><td>FK</td><td>References <code>schemes.id</code></td></tr>
+    <tr><td><code>match_score</code></td><td>Float (0 - 100)</td><td>Calculated compatibility percentage</td></tr>
+    <tr><td><code>status</code></td><td>String(50)</td><td>Eligible, Partially Eligible, Disqualified</td></tr>
+    <tr><td><code>reasons</code></td><td>JSON</td><td>Array of specific qualification or disqualification points</td></tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h2>4. Backend Deep Dive (FastAPI Services & APIs)</h2>
+
+<h3>Directory Architecture (`backend/app/`)</h3>
+<pre>
+backend/
+├── app/
+│   ├── api/
+│   │   ├── admin.py            # PDF ingestion, scheme curation, Qdrant indexing
+│   │   ├── auth.py             # User profile endpoints (/me)
+│   │   ├── business.py         # Business profile management CRUD
+│   │   ├── ocr.py              # Document upload & optical character recognition
+│   │   ├── recommendations.py  # Evaluation & matching engine endpoints
+│   │   └── schemes.py          # Scheme listing, details, and RAG chat endpoint
+│   ├── services/
+│   │   ├── ai_search_service.py      # Hybrid keyword & semantic search
+│   │   ├── auth_service.py           # JWT verification with optional guest support
+│   │   ├── eligibility_engine.py     # Deterministic MSME rule validation
+│   │   ├── embedding_service.py      # Google Generative AI embeddings generator
+│   │   ├── ingestion_pipeline.py     # Document text chunking & vector storage
+│   │   ├── ocr_service.py            # Document parsing & text extraction
+│   │   ├── rag_service.py            # RAG controller with Gemini & DB fallback
+│   │   ├── recommendation_engine.py  # Orchestration & scoring pipeline
+│   │   └── storage_service.py        # Object storage (Supabase buckets)
+│   ├── config.py           # Pydantic Settings & environment loader
+│   ├── database.py         # Engine setup & session dependency injection
+│   ├── models.py           # SQLAlchemy declarative database models
+│   └── schemas.py          # Pydantic request/response schemas
+├── run.py                  # Uvicorn server launcher (port 8000)
+└── requirements.txt        # Python dependency manifest
+</pre>
+
+<h3>Key API Endpoints Reference</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Endpoint</th>
+      <th>Auth Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="badge badge-get">GET</span></td>
+      <td><code>/health</code></td>
+      <td>No</td>
+      <td>Server heartbeat check and system status</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-get">GET</span></td>
+      <td><code>/api/v1/auth/me</code></td>
+      <td>Yes</td>
+      <td>Fetches current user metadata and active business profile</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-post">POST</span></td>
+      <td><code>/api/v1/business/profile</code></td>
+      <td>Yes</td>
+      <td>Creates or updates the MSME business profile</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-get">GET</span></td>
+      <td><code>/api/v1/business/profile</code></td>
+      <td>Yes</td>
+      <td>Retrieves the authenticated user's business profile</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-get">GET</span></td>
+      <td><code>/api/v1/schemes/</code></td>
+      <td>No</td>
+      <td>Returns list of all active schemes with filtering options</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-get">GET</span></td>
+      <td><code>/api/v1/schemes/{id}</code></td>
+      <td>No</td>
+      <td>Fetches complete scheme dossier including eligibility rules</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-post">POST</span></td>
+      <td><code>/api/v1/schemes/chat</code></td>
+      <td><strong>Optional</strong></td>
+      <td>RAG-powered conversational scheme assistant (Gemini LLM)</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-get">GET</span></td>
+      <td><code>/api/v1/recommendations/</code></td>
+      <td>Yes</td>
+      <td>Runs matching engine and returns eligible schemes with XAI scores</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-post">POST</span></td>
+      <td><code>/api/v1/ocr/upload</code></td>
+      <td>Yes</td>
+      <td>Accepts PDF/Images, runs OCR extraction, and validates Udyam/PAN</td>
+    </tr>
+    <tr>
+      <td><span class="badge badge-post">POST</span></td>
+      <td><code>/api/v1/admin/ingest-pdf</code></td>
+      <td>Yes (Admin)</td>
+      <td>Parses scheme circular, chunks text, and vectorizes into Qdrant</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="page-break"></div>
+
+<h3>Eligibility & Rules Evaluation Engine (`eligibility_engine.py`)</h3>
+<p>
+  The eligibility engine evaluates deterministic rules defined in JSON against the user's <code>BusinessProfile</code>. Criteria checks include:
+</p>
+<ul>
+  <li><strong>Enterprise Classification Check:</strong> Validates against Government of India MSME criteria:
+    <ul>
+      <li><em>Micro:</em> Investment &le; ₹1 Crore AND Turnover &le; ₹5 Crore</li>
+      <li><em>Small:</em> Investment &le; ₹10 Crore AND Turnover &le; ₹50 Crore</li>
+      <li><em>Medium:</em> Investment &le; ₹50 Crore AND Turnover &le; ₹250 Crore</li>
+    </ul>
+  </li>
+  <li><strong>Turnover Limits:</strong> Checks <code>min_turnover</code> and <code>max_turnover</code> thresholds.</li>
+  <li><strong>Sector Compatibility:</strong> Checks if scheme targets Manufacturing, Service, or Trading.</li>
+  <li><strong>Demographic & Diversity Boosters:</strong> Validates criteria for Women Entrepreneurs, SC/ST, Minority, or North Eastern Region (NER) enterprises.</li>
+  <li><strong>Registration Prerequisites:</strong> Enforces whether Udyam or GST is strictly mandated.</li>
+</ul>
+
+<h3>RAG Service & AI Chatbot Pipeline (`rag_service.py`)</h3>
+<p>
+  The Retrieval-Augmented Generation (RAG) service enables natural language interaction with policy circulars.
+</p>
+<div class="grid-2">
+  <div class="card">
+    <h4>Vector Semantic Search (Primary)</h4>
+    <p>1. Converts query to a 768-dimensional vector via Google text-embedding model.</p>
+    <p>2. Queries Qdrant collection <code>msme_schemes</code> using cosine similarity.</p>
+    <p>3. Retrieves top-k relevant paragraph chunks from government guidelines.</p>
+  </div>
+  <div class="card">
+    <h4>SQL Database Fallback (Resilient)</h4>
+    <p>1. Activated automatically if Qdrant is unreachable or returns 0 matches.</p>
+    <p>2. Extracts keywords from user query and runs ILIKE filters across all 213 local schemes.</p>
+    <p>3. Compiles ministry, max benefits, eligibility, and descriptions as context.</p>
+  </div>
+</div>
+<p>
+  <strong>LLM Prompt Construction:</strong> The retrieved context is formatted into a system prompt for Google Gemini, instructing the model to provide accurate, grounded, bulleted responses with official scheme citations.
+</p>
+
+<div class="page-break"></div>
+
+<h2>5. Frontend Deep Dive (React 19 + Vite Application)</h2>
+
+<h3>Directory Architecture (`frontend/src/`)</h3>
+<pre>
+frontend/
+├── src/
+│   ├── assets/             # Static logos and illustrations
+│   ├── components/
+│   │   ├── Chatbot.jsx       # Resilient AI Scheme Assistant widget
+│   │   ├── Navbar.jsx        # Top navigation header with profile & auth actions
+│   │   ├── ProtectedRoute.jsx# Auth gatekeeper with Supabase Login/Signup modal
+│   │   ├── SchemeCard.jsx    # Scheme presentation card with match score & badges
+│   │   └── Sidebar.jsx       # Side navigation bar for application views
+│   ├── context/
+│   └── AuthContext.jsx       # Global Supabase authentication & user state
+│   ├── pages/
+│   │   ├── AdminPanel.jsx          # Admin ingestion & vector index management
+│   │   ├── Analytics.jsx           # Analytics charts for matched scheme distributions
+│   │   ├── BusinessProfile.jsx     # Multi-step business profile questionnaire
+│   │   ├── Dashboard.jsx           # Executive overview & stats dashboard
+│   │   ├── DocumentVerification.jsx# OCR file upload and certificate reconciliation
+│   │   └── RecommendationsList.jsx # Matched schemes with filters & XAI reasons
+│   ├── utils/
+│   │   └── api.js            # Configured Axios instance with bearer token interceptor
+│   ├── App.jsx               # Tab-based routing controller and root layout
+│   ├── index.css             # Tailwind CSS tokens and custom styling
+│   └── main.jsx              # React DOM initialization
+├── vite.config.js          # Vite config with /api reverse proxy
+└── package.json            # Node.js dependencies manifest
+</pre>
+
+<h3>Core Pages & Functionality</h3>
+
+<div class="card" style="margin-bottom: 12px;">
+  <h4>1. Dashboard (`Dashboard.jsx`)</h4>
+  <p>Serves as the mission control for the entrepreneur. Displays profile completion percentage, count of eligible schemes, total potential subsidy unlock amount, and quick links to apply.</p>
+</div>
+
+<div class="card" style="margin-bottom: 12px;">
+  <h4>2. Business Profile (`BusinessProfile.jsx`)</h4>
+  <p>An interactive, validated form capturing enterprise parameters (Annual Turnover, Plant/Machinery Investment, Sector, State, Social Category, Gender of Promoters, Udyam Registration). Updates trigger real-time re-evaluation of recommendations.</p>
+</div>
+
+<div class="card" style="margin-bottom: 12px;">
+  <h4>3. Recommendations Hub (`RecommendationsList.jsx`)</h4>
+  <p>Displays all schemes scored by the recommendation engine. Filterable by category (Subsidy, Loan, Credit Guarantee). Each card expands to show Explainable AI (XAI) bullet points justifying why the user qualifies or what is missing.</p>
+</div>
+
+<div class="card" style="margin-bottom: 12px;">
+  <h4>4. Document Verification (`DocumentVerification.jsx`)</h4>
+  <p>File drop zone supporting PDF and image uploads of Udyam certificates, PAN cards, and GST filings. Displays OCR processing status and verified attributes extracted from the document.</p>
+</div>
+
+<div class="card" style="margin-bottom: 12px;">
+  <h4>5. Scheme Assistant Chatbot (`Chatbot.jsx`)</h4>
+  <p>A floating, draggable widget available on every page. Users can ask open-ended questions ("What is CGTMSE?", "What are the rules for women entrepreneurs?"). Features quick prompt suggestions, typing indicators, auto-scrolling, and formatted markdown response rendering.</p>
+</div>
+
+<div class="page-break"></div>
+
+<h2>6. Data Ingestion & Dataset Tools</h2>
+<p>The repository includes standalone utilities for scraping, extracting, verifying, and seeding scheme data:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Script / File</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>extract_schemes.py</code></td>
+      <td>Extracts structured scheme data from raw text sources and PDF circulars into standardized JSON format.</td>
+    </tr>
+    <tr>
+      <td><code>extract_all_schemes.py</code></td>
+      <td>Batch extraction script that processes the entire catalog of central and state MSME schemes into <code>extracted_schemes.json</code>.</td>
+    </tr>
+    <tr>
+      <td><code>extracted_schemes.json</code></td>
+      <td>Master database file containing 213+ fully structured government schemes with ministry, benefits, rules, and documents.</td>
+    </tr>
+    <tr>
+      <td><code>sample_schemes.json</code></td>
+      <td>Lightweight sample dataset used for integration testing and staging environments.</td>
+    </tr>
+    <tr>
+      <td><code>check_schemes.py</code></td>
+      <td>Validation script that inspects database integrity and verifies scheme counts and JSON schema compliance.</td>
+    </tr>
+    <tr>
+      <td><code>check_qdrant.py</code></td>
+      <td>Diagnostic script to test latency, collection status, and vector dimension consistency with Qdrant Cloud.</td>
+    </tr>
+    <tr>
+      <td><code>start_all.bat</code></td>
+      <td>One-click Windows batch script that starts both backend and frontend servers in separate command windows.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h2>7. Recent Resiliency Fixes & Architectural Upgrades</h2>
+
+<div class="callout callout-success">
+  <div class="callout-title">Resilience Upgrades Implemented</div>
+  <p>To eliminate intermittent network drops and authentication rejections, five major architectural enhancements were made to the codebase.</p>
+</div>
+
+<h3>1. Optional Authentication on Chatbot Endpoint</h3>
+<ul>
+  <li><strong>Prior Behavior:</strong> <code>POST /api/v1/schemes/chat</code> required strict authentication via <code>get_current_user</code>. If a user was browsing as a guest, had an expired token, or token refresh failed, the backend returned <code>401 Unauthorized</code>, causing the frontend to report a network failure.</li>
+  <li><strong>Solution:</strong> Added <code>get_optional_current_user</code> in <code>auth_service.py</code> with <code>HTTPBearer(auto_error=False)</code>. The chatbot endpoint now accepts both authenticated users and guests seamlessly.</li>
+</ul>
+
+<h3>2. Automatic SQL Database Fallback for Vector Search</h3>
+<ul>
+  <li><strong>Prior Behavior:</strong> When remote Qdrant Cloud connections experienced socket drops (<code>[WinError 10054] ConnectionResetError</code>), vector search threw an unhandled exception, causing the chatbot to fail.</li>
+  <li><strong>Solution:</strong> Implemented a database fallback mechanism in <code>rag_service.py</code>. If vector search fails or returns zero hits, the service queries the local SQL database across all 213 schemes using tokenized keyword search. This context is injected into Gemini, ensuring reliable answers even when offline.</li>
+</ul>
+
+<h3>3. Frontend Vite Reverse Proxy Configuration</h3>
+<ul>
+  <li><strong>Prior Behavior:</strong> Axios called <code>http://localhost:8000/api/v1</code> directly. When frontend was accessed via <code>127.0.0.1</code> or different ports, CORS preflight checks failed intermittently.</li>
+  <li><strong>Solution:</strong> Configured a reverse proxy in <code>vite.config.js</code> forwarding <code>/api</code> requests to <code>http://localhost:8000</code>, eliminating CORS issues during development.</li>
+</ul>
+
+<h3>4. Improved Chatbot Error Handling & Formatting</h3>
+<ul>
+  <li><strong>Prior Behavior:</strong> Frontend caught errors and displayed generic <code>Error: Network Error</code> with unformatted plain text.</li>
+  <li><strong>Solution:</strong> Added explicit network error detection in <code>Chatbot.jsx</code> with actionable guidance, and added <code>whitespace-pre-wrap</code> styling for proper markdown rendering of lists and paragraphs.</li>
+</ul>
+
+<h3>5. Robust Windows Startup Script</h3>
+<ul>
+  <li><strong>Prior Behavior:</strong> <code>start_all.bat</code> used relative <code>cd</code> commands that failed if executed from another working directory or via desktop shortcuts.</li>
+  <li><strong>Solution:</strong> Updated paths to use <code>cd /d "%~dp0backend"</code> and <code>cd /d "%~dp0frontend"</code>, guaranteeing correct directory resolution.</li>
+</ul>
+
+<div class="page-break"></div>
+
+<h2>8. Setup, Execution & Operations Guide</h2>
+
+<h3>Prerequisites</h3>
+<ul>
+  <li>Python 3.10+ installed and added to PATH</li>
+  <li>Node.js 18+ and npm installed</li>
+  <li>A Google Gemini API key (configured in <code>backend/.env</code>)</li>
+  <li>(Optional) Supabase project credentials and Qdrant Cloud cluster</li>
+</ul>
+
+<h3>Quick Start (Windows)</h3>
+<p>Double-click the <code>start_all.bat</code> file in the repository root. This will automatically:</p>
+<ol>
+  <li>Open a command window and start the FastAPI backend on <code>http://localhost:8000</code></li>
+  <li>Open a second command window and start the Vite development server on <code>http://localhost:5173</code></li>
+</ol>
+
+<h3>Manual Start Commands</h3>
+
+<h4>Backend</h4>
+<pre><code>cd backend
+# Activate virtual environment if present:
+.venv\Scripts\activate
+# Install dependencies:
+pip install -r requirements.txt
+# Launch development server:
+python run.py</code></pre>
+
+<h4>Frontend</h4>
+<pre><code>cd frontend
+# Install dependencies:
+npm install
+# Launch development server:
+npm run dev</code></pre>
+
+<h3>Access URLs</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Service</th>
+      <th>URL</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Frontend Application</strong></td>
+      <td><code>http://localhost:5173</code></td>
+      <td>Main web application user interface</td>
+    </tr>
+    <tr>
+      <td><strong>FastAPI Swagger UI</strong></td>
+      <td><code>http://localhost:8000/docs</code></td>
+      <td>Interactive OpenAPI specification and API testing sandbox</td>
+    </tr>
+    <tr>
+      <td><strong>FastAPI ReDoc</strong></td>
+      <td><code>http://localhost:8000/redoc</code></td>
+      <td>Alternative technical API documentation</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+<p style="text-align: center; color: #64748b; font-size: 11px; margin-top: 30px;">
+  &copy; 2026 Vyapar SchemeHub Platform &bull; Built for India's MSME Ecosystem &bull; End of Comprehensive Documentation
+</p>
+
+</body>
+</html>
