@@ -11,10 +11,14 @@ class OCRService:
     def __init__(self):
         self.ocr = None
         self.use_fallback = False
-        
+        self._initialized = False
+
+    def _init_ocr(self):
+        if self._initialized:
+            return
+        self._initialized = True
         try:
             from paddleocr import PaddleOCR
-            # Initialize PaddleOCR (requires download of models on first run)
             self.ocr = PaddleOCR(use_angle_cls=True, lang='en', show_log=False)
             logger.info("PaddleOCR initialized successfully.")
         except Exception as e:
@@ -39,6 +43,7 @@ class OCRService:
         """
         Extracts text from an image file using PaddleOCR.
         """
+        self._init_ocr()
         if self.use_fallback or not self.ocr:
             # Fallback to simulated OCR extraction for development
             logger.warning("PaddleOCR not available. Returning simulated scan based on filename.")

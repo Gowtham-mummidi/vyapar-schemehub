@@ -1,4 +1,5 @@
 import os
+from pydantic import model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import Optional
 
@@ -25,6 +26,14 @@ class Settings(BaseSettings):
     GEMINI_API_KEY: str = "placeholder_gemini_key"
     EMBEDDING_MODEL_NAME: str = "BAAI/bge-m3"
     
+    @model_validator(mode='after')
+    def strip_strings(self):
+        for field in ['QDRANT_HOST', 'QDRANT_API_KEY', 'GEMINI_API_KEY', 'SECRET_KEY', 'SUPABASE_URL', 'SUPABASE_KEY', 'SUPABASE_SERVICE_ROLE_KEY', 'DATABASE_URL']:
+            val = getattr(self, field, None)
+            if isinstance(val, str):
+                setattr(self, field, val.strip())
+        return self
+
     # Allow reading from env file
     model_config = SettingsConfigDict(
         env_file=(
