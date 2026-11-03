@@ -140,9 +140,7 @@ const AdminPanel = () => {
      const formData = new FormData();
      formData.append('file', file);
      try {
-        await api.post(`/admin/schemes/${id}/upload-pdf`, formData, {
-           headers: { 'Content-Type': 'multipart/form-data' }
-        });
+        await api.post(`/admin/schemes/${id}/upload-pdf`, formData);
         showSuccess('PDF ingested and indexed.');
         loadSchemes();
      } catch (err) {
@@ -158,9 +156,7 @@ const AdminPanel = () => {
     const formData = new FormData();
     formData.append('file', pdfAsSchemeFile);
     try {
-      const res = await api.post('/admin/schemes/from-pdf', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' }
-      });
+      const res = await api.post('/admin/schemes/from-pdf', formData);
       showSuccess(`Scheme "${res.data.scheme.name}" created from PDF.`);
       setPdfAsSchemeFile(null);
       if (pdfAsSchemeInputRef.current) pdfAsSchemeInputRef.current.value = '';

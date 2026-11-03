@@ -13,6 +13,11 @@ const api = axios.create({
 // Request interceptor to inject JWT bearer token
 api.interceptors.request.use(
   (config) => {
+    // If request payload is FormData, remove manual Content-Type so browser sets multipart/form-data with boundary
+    if (config.data instanceof FormData) {
+      delete config.headers['Content-Type'];
+    }
+
     // 1. Read Supabase auth token from local storage
     const storageKeys = Object.keys(localStorage);
     const authKey = storageKeys.find(key => key.startsWith('sb-') && key.endsWith('-auth-token'));

@@ -2,6 +2,7 @@ import os
 import shutil
 import tempfile
 import uuid
+from typing import List
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Form, status
 from sqlalchemy.orm import Session
 from app.database import get_db
@@ -26,10 +27,24 @@ def verify_document_upload(
     """
     profile = db.query(BusinessProfile).filter(BusinessProfile.id == current_user.user_id).first()
     if not profile:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Business profile not found. Complete profile details first."
+        user_name = current_user.name or (current_user.email.split('@')[0] if current_user.email else "User")
+        profile = BusinessProfile(
+            id=current_user.user_id,
+            email=current_user.email,
+            name=user_name,
+            company_name="My Business",
+            annual_turnover=0.0,
+            investment_in_plant_machinery=0.0,
+            number_of_employees=0,
+            business_age_years=0,
+            social_category="General",
+            gender_of_owner="Male",
+            is_minority_owned=False,
+            registrations={}
         )
+        db.add(profile)
+        db.commit()
+        db.refresh(profile)
 
     # Validate document type parameter
     doc_type_clean = document_type.upper().strip()
@@ -40,7 +55,7 @@ def verify_document_upload(
         )
 
     # 1. Save uploaded file temporarily for parsing
-    suffix = os.path.splitext(file.filename)[1]
+    suffix = os.path.splitext(file.filename or "")[1] or ".pdf"
     with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as temp_file:
         try:
             shutil.copyfileobj(file.file, temp_file)
@@ -52,25 +67,29 @@ def verify_document_upload(
             )
 
     try:
-        # 2. Upload file to Supabase Storage
-        with open(temp_path, "rb") as f_bytes:
-            content_bytes = f_bytes.read()
-        
-        content_type = file.content_type or ("application/pdf" if suffix.lower() == ".pdf" else "image/jpeg")
-        doc_filename = f"{doc_type_clean.lower()}_{uuid.uuid4().hex[:8]}{suffix}"
-        storage_url = storage_service.upload_document_pdf(
-            user_id=profile.id,
-            filename=doc_filename,
-            file_bytes=content_bytes,
-            content_type=content_type
-        )
+        # 2. Upload file to Supabase Storage (graceful fallback if bucket missing)
+        storage_url = None
+        try:
+            with open(temp_path, "rb") as f_bytes:
+                content_bytes = f_bytes.read()
+            content_type = file.content_type or ("application/pdf" if suffix.lower() == ".pdf" else "image/jpeg")
+            doc_filename = f"{doc_type_clean.lower()}_{uuid.uuid4().hex[:8]}{suffix}"
+            storage_url = storage_service.upload_document_pdf(
+                user_id=profile.id,
+                filename=doc_filename,
+                file_bytes=content_bytes,
+                content_type=content_type
+            )
+        except Exception as e:
+            import logging
+            logging.getLogger(__name__).warning(f"Storage upload skipped: {e}")
 
         # 3. Run OCR & parse details
         status_result, extracted, mismatches = ocr_service.verify_document(
-            temp_path, doc_type_clean, profile
+            temp_path, doc_type_clean, profile, original_filename=file.filename or ""
         )
         
-        # 4. Create database record with Supabase Storage file_url
+        # 4. Create database record
         verification = OCRVerification(
             user_id=profile.id,
             document_type=doc_type_clean,
@@ -81,13 +100,11 @@ def verify_document_upload(
         )
         db.add(verification)
         
-        # 4. If status is Verified or Mismatched (has data), we update registrations dictionary
-        # In a real pipeline, we update the registration state if it is successfully 'Verified'.
-        if status_result in ["Verified", "Mismatched"]:
-            regs = dict(profile.registrations or {})
-            key = doc_type_clean.lower()
-            regs[key] = (status_result == "Verified")
-            profile.registrations = regs
+        # 5. Update profile registrations dictionary
+        regs = dict(profile.registrations or {})
+        key = doc_type_clean.lower()
+        regs[key] = (status_result == "Verified")
+        profile.registrations = regs
             
         db.commit()
         db.refresh(verification)
@@ -105,3 +122,15 @@ def verify_document_upload(
         # Cleanup temp file
         if os.path.exists(temp_path):
             os.remove(temp_path)
+
+@router.get("/verifications", response_model=List[OCRVerificationOut])
+def get_user_verifications(
+    db: Session = Depends(get_db),
+    current_user: TokenData = Depends(get_current_user)
+):
+    """
+    Returns all past OCR document verifications for the current user.
+    """
+    return db.query(OCRVerification).filter(
+        OCRVerification.user_id == current_user.user_id
+    ).order_by(OCRVerification.verified_at.desc()).all()
