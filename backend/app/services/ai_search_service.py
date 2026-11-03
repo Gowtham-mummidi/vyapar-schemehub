@@ -62,7 +62,13 @@ class AISearchService:
             eligibility_breakdown = {}
             profile_score = 75.0  # neutral default if no profile
 
-            if profile and (profile.company_name or float(profile.annual_turnover or 0) > 0 or profile.sector):
+            if profile and (
+                profile.company_name or
+                float(profile.annual_turnover or 0) > 0 or
+                profile.sector or
+                profile.project_title or
+                (profile.registrations or {}).get("projects")
+            ):
                 is_eligible, eligibility_breakdown = eligibility_engine.check_eligibility(profile, scheme)
                 # Compute eligibility score
                 passed_tests = sum(1 for k, v in eligibility_breakdown.items() if v.get("status", False))

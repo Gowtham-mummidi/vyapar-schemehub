@@ -15,13 +15,28 @@ def get_business_profile(
 ):
     """
     Fetches the profile for the authenticated user.
+    Creates a default blank profile if one does not exist yet.
     """
     profile = db.query(BusinessProfile).filter(BusinessProfile.id == current_user.user_id).first()
     if not profile:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Business profile not found. Please log in or trigger auth handshake."
+        user_name = current_user.name or (current_user.email.split('@')[0] if current_user.email else "User")
+        profile = BusinessProfile(
+            id=current_user.user_id,
+            email=current_user.email,
+            name=user_name,
+            company_name="My Business",
+            annual_turnover=0.0,
+            investment_in_plant_machinery=0.0,
+            number_of_employees=0,
+            business_age_years=0,
+            social_category="General",
+            gender_of_owner="Male",
+            is_minority_owned=False,
+            registrations={}
         )
+        db.add(profile)
+        db.commit()
+        db.refresh(profile)
     return profile
 
 @router.put("/profile", response_model=BusinessProfileOut)
@@ -35,13 +50,38 @@ def update_business_profile(
     """
     profile = db.query(BusinessProfile).filter(BusinessProfile.id == current_user.user_id).first()
     if not profile:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Business profile not found."
+        user_name = current_user.name or (current_user.email.split('@')[0] if current_user.email else "User")
+        profile = BusinessProfile(
+            id=current_user.user_id,
+            email=current_user.email,
+            name=user_name,
+            company_name="My Business",
+            annual_turnover=0.0,
+            investment_in_plant_machinery=0.0,
+            number_of_employees=0,
+            business_age_years=0,
+            social_category="General",
+            gender_of_owner="Male",
+            is_minority_owned=False,
+            registrations={}
         )
+        db.add(profile)
+        db.flush()
         
     # Update profile fields
     update_data = profile_data.model_dump(exclude_unset=True)
+
+    # Sync project_title and project_description from registrations.projects if present
+    regs = update_data.get("registrations") or profile.registrations or {}
+    projs = regs.get("projects", [])
+    if projs:
+        if not update_data.get("project_title"):
+            update_data["project_title"] = projs[0].get("title", "")
+        if not update_data.get("project_description"):
+            update_data["project_description"] = "\n".join(
+                [f"{p.get('title', '')}: {p.get('description') or p.get('desc') or ''}" for p in projs]
+            )
+
     for key, value in update_data.items():
         setattr(profile, key, value)
         

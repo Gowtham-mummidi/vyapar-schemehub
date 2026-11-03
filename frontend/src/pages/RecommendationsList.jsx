@@ -14,7 +14,7 @@ const RecommendationsList = ({ selectedScheme, setSelectedScheme, setActiveTab }
   const [activeQuery, setActiveQuery] = useState('');
 
   const regs = profile?.registrations || {};
-  const projects = regs.projects || (profile?.project_title ? [{ title: profile.project_title, desc: profile.project_description }] : []);
+  const projects = regs.projects || (profile?.project_title ? [{ title: profile.project_title, desc: profile.project_description, description: profile.project_description }] : []);
   
   // Filters
   const [search, setSearch] = useState('');
@@ -23,14 +23,15 @@ const RecommendationsList = ({ selectedScheme, setSelectedScheme, setActiveTab }
 
   useEffect(() => {
     loadRecommendations();
-  }, [projects.length]);
+  }, [profile?.updated_at, projects.length]);
 
-  const loadRecommendations = async () => {
+  const loadRecommendations = async (forceRefresh = false) => {
     try {
       setLoading(true);
       setActiveQuery('');
       // Try fetching user profile recommendations first
-      const res = await api.get('/recommendations?limit=50');
+      const url = forceRefresh ? '/recommendations?limit=50&refresh=true' : '/recommendations?limit=50';
+      const res = await api.get(url);
       if (res.data && res.data.length > 0) {
         setRecs(res.data);
         setFilteredRecs(res.data);
@@ -196,6 +197,16 @@ const RecommendationsList = ({ selectedScheme, setSelectedScheme, setActiveTab }
                   <option value="Ineligible">Need Review</option>
                 </select>
               </div>
+
+              <button
+                type="button"
+                onClick={() => { setSearch(''); loadRecommendations(true); }}
+                className="text-xs font-medium text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1.5 rounded-lg hover:bg-blue-100 flex items-center gap-1 transition-colors"
+                title="Recalculate scheme match percentages based on latest business profile"
+              >
+                <RefreshCw className="w-3 h-3 text-blue-600" />
+                <span>Recalculate</span>
+              </button>
 
               {activeQuery && (
                 <button

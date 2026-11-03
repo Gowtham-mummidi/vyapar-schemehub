@@ -17,6 +17,7 @@ const AdminPanel = () => {
   const fileInputRef = useRef(null);
   const pdfAsSchemeInputRef = useRef(null);
 
+  const [isCreating, setIsCreating] = useState(false);
   const [newScheme, setNewScheme] = useState({
     name: '',
     description: '',
@@ -66,9 +67,34 @@ const AdminPanel = () => {
 
   const handleCreateScheme = async (e) => {
     e.preventDefault();
+    const name = (newScheme.name || '').trim();
+    const description = (newScheme.description || '').trim();
+    if (!name || !description) {
+      showError('Scheme name and description are required.');
+      return;
+    }
+
+    let link = (newScheme.official_link || '').trim();
+    if (link && !link.startsWith('http://') && !link.startsWith('https://')) {
+      link = 'https://' + link;
+    }
+
+    setIsCreating(true);
     try {
-      await api.post('/admin/schemes', newScheme);
-      showSuccess('Scheme created.');
+      const payload = {
+        name,
+        description,
+        ministry: (newScheme.ministry || '').trim() || 'Ministry of MSME',
+        funding_type: newScheme.funding_type || 'Subsidy',
+        max_benefit_amount: Number(newScheme.max_benefit_amount) || 0,
+        official_link: link,
+        eligibility_rules: newScheme.eligibility_rules,
+        required_documents: Array.isArray(newScheme.required_documents) ? newScheme.required_documents : ['Udyam'],
+        is_active: true
+      };
+
+      await api.post('/admin/schemes', payload);
+      showSuccess(`Scheme "${name}" registered successfully!`);
       setNewScheme({
         name: '', description: '', ministry: 'Ministry of MSME', funding_type: 'Subsidy',
         max_benefit_amount: 0, official_link: '',
@@ -77,7 +103,10 @@ const AdminPanel = () => {
       });
       loadSchemes();
     } catch (err) {
-      showError('Failed to create scheme.');
+      const detail = err.response?.data?.detail || err.message || 'Failed to create scheme.';
+      showError(`Failed to create scheme: ${detail}`);
+    } finally {
+      setIsCreating(false);
     }
   };
 
@@ -367,15 +396,88 @@ const AdminPanel = () => {
               <div className="grid grid-cols-2 gap-3">
                 <div>
                   <label className="block text-xs font-medium text-gray-500 mb-1">Max Payout (INR)</label>
-                  <input type="number" value={newScheme.max_benefit_amount} onChange={(e) => setNewScheme(p => ({ ...p, max_benefit_amount: parseFloat(e.target.value) }))} className="input text-sm" />
+                  <input
+                    type="number"
+                    value={newScheme.max_benefit_amount ?? 0}
+                    onChange={(e) => {
+                      const val = e.target.value === '' ? 0 : parseFloat(e.target.value);
+                      setNewScheme(p => ({ ...p, max_benefit_amount: isNaN(val) ? 0 : val }));
+                    }}
+                    className="input text-sm"
+                  />
                 </div>
                 <div>
                   <label className="block text-xs font-medium text-gray-500 mb-1">Official Link</label>
-                  <input type="url" value={newScheme.official_link} onChange={(e) => setNewScheme(p => ({ ...p, official_link: e.target.value }))} placeholder="https://..." className="input text-sm" />
+                  <input
+                    type="text"
+                    value={newScheme.official_link}
+                    onChange={(e) => setNewScheme(p => ({ ...p, official_link: e.target.value }))}
+                    placeholder="https://msme.gov.in"
+                    className="input text-sm"
+                  />
                 </div>
               </div>
-              <button type="submit" className="btn btn-primary w-full text-sm justify-center">
-                <Plus className="w-4 h-4" /> Register Scheme
+
+              {/* Eligibility Parameters */}
+              <div className="bg-gray-50 border border-gray-200 rounded-lg p-3 space-y-2">
+                <p className="text-[11px] font-bold text-gray-600 uppercase tracking-wider">Eligibility Criteria</p>
+                <div className="grid grid-cols-2 gap-2">
+                  <div>
+                    <label className="block text-[11px] text-gray-500 mb-0.5">Max Turnover (₹)</label>
+                    <input
+                      type="number"
+                      value={newScheme.eligibility_rules?.max_turnover ?? 50000000}
+                      onChange={(e) => {
+                        const val = parseFloat(e.target.value) || 0;
+                        setNewScheme(p => ({
+                          ...p,
+                          eligibility_rules: { ...p.eligibility_rules, max_turnover: val }
+                        }));
+                      }}
+                      className="input text-xs py-1"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-[11px] text-gray-500 mb-0.5">Max Investment (₹)</label>
+                    <input
+                      type="number"
+                      value={newScheme.eligibility_rules?.max_investment ?? 10000000}
+                      onChange={(e) => {
+                        const val = parseFloat(e.target.value) || 0;
+                        setNewScheme(p => ({
+                          ...p,
+                          eligibility_rules: { ...p.eligibility_rules, max_investment: val }
+                        }));
+                      }}
+                      className="input text-xs py-1"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-[11px] text-gray-500 mb-0.5">Target Sector (e.g. All, Manufacturing, IT)</label>
+                  <input
+                    type="text"
+                    value={(newScheme.eligibility_rules?.allowed_sectors || ['All']).join(', ')}
+                    onChange={(e) => {
+                      const sectors = e.target.value.split(',').map(s => s.trim()).filter(Boolean);
+                      setNewScheme(p => ({
+                        ...p,
+                        eligibility_rules: { ...p.eligibility_rules, allowed_sectors: sectors.length ? sectors : ['All'] }
+                      }));
+                    }}
+                    placeholder="All"
+                    className="input text-xs py-1"
+                  />
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                disabled={isCreating}
+                className="btn btn-primary w-full text-sm justify-center"
+              >
+                <Plus className="w-4 h-4" />
+                {isCreating ? 'Registering...' : 'Register Scheme'}
               </button>
             </form>
           </div>

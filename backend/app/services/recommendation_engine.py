@@ -91,12 +91,21 @@ class RecommendationEngine:
             is_eligible, breakdown = eligibility_engine.check_eligibility(profile, scheme)
             score = self.calculate_match_score(profile, scheme, is_eligible, breakdown)
             
-            # Blend with semantic similarity score if project_description is present
-            if profile.project_description and profile.project_description.strip() and is_eligible:
+            # Blend with semantic similarity score if project information is present
+            project_query = (profile.project_description or "").strip()
+            if not project_query:
+                regs = profile.registrations or {}
+                projs = regs.get("projects", [])
+                if projs:
+                    project_query = " ".join([f"{p.get('title', '')} {p.get('description') or p.get('desc') or ''}" for p in projs]).strip()
+                elif profile.project_title:
+                    project_query = profile.project_title.strip()
+
+            if project_query and is_eligible:
                 try:
                     # Query similarity vector fragments for this scheme
                     hits = rag_service.search_similar_chunks(
-                        query=profile.project_description,
+                        query=project_query,
                         scheme_id=str(scheme.id),
                         limit=3
                     )

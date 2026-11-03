@@ -194,7 +194,9 @@ const Dashboard = ({ setActiveTab, setSelectedScheme, profile }) => {
                     {projects.map((p, i) => (
                       <button key={i} onClick={() => setActiveTab('profile')} className="w-full text-left py-1.5 hover:bg-indigo-50/50 rounded px-1 -mx-1 transition-colors">
                         <p className="text-sm font-medium text-gray-800">{p.title}</p>
-                        {p.desc && <p className="text-xs text-gray-500 line-clamp-2 mt-0.5">{p.desc}</p>}
+                        {(p.desc || p.description) && (
+                          <p className="text-xs text-gray-500 line-clamp-2 mt-0.5">{p.desc || p.description}</p>
+                        )}
                       </button>
                     ))}
                     <button onClick={() => setActiveTab('profile')} className="btn btn-ghost w-full text-xs mt-1">Manage Projects</button>
@@ -236,7 +238,9 @@ const Dashboard = ({ setActiveTab, setSelectedScheme, profile }) => {
                   {projects.length > 0 ? (
                     <div className="space-y-2">
                       <p className="text-sm font-medium text-gray-700 truncate">{projects[0].title}</p>
-                      {projects[0].desc && <p className="text-sm text-gray-500 line-clamp-2">{projects[0].desc}</p>}
+                      {(projects[0].desc || projects[0].description) && (
+                        <p className="text-xs text-gray-500 line-clamp-2">{projects[0].desc || projects[0].description}</p>
+                      )}
                       <span className="badge badge-blue">{projects.length} project{projects.length > 1 ? 's' : ''}</span>
                     </div>
                   ) : (

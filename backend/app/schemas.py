@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 from typing import Optional, List, Dict, Any
 from uuid import UUID
 from decimal import Decimal
@@ -55,7 +55,7 @@ class SchemeBase(BaseModel):
     description: str
     ministry: str
     funding_type: Optional[str] = None
-    max_benefit_amount: Decimal = Field(default=Decimal("0.0"))
+    max_benefit_amount: Optional[Decimal] = Field(default=Decimal("0.0"))
     official_link: Optional[str] = None
     pdf_storage_path: Optional[str] = None
     is_active: bool = True
@@ -97,6 +97,12 @@ class RecommendationOut(BaseModel):
     recommendation_reason: Optional[str] = None
     status: str = "Viewed"
     created_at: Optional[datetime] = None
+
+    @model_validator(mode='after')
+    def set_match_percentage(self):
+        if self.match_percentage is None and self.match_score is not None:
+            self.match_percentage = float(self.match_score)
+        return self
 
     class Config:
         from_attributes = True

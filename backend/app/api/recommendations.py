@@ -16,36 +16,56 @@ router = APIRouter()
 def get_user_recommendations(
     db: Session = Depends(get_db),
     current_user: TokenData = Depends(get_current_user),
-    limit: Optional[int] = Query(None, description="Limit the number of recommendations returned")
+    limit: Optional[int] = Query(None, description="Limit the number of recommendations returned"),
+    refresh: bool = Query(False, description="Force recalculation of recommendations")
 ):
     """
     Fetches the ranked list of recommendations for the current MSME.
-    Generates recommendations on-the-fly if not already created.
+    Generates recommendations on-the-fly if not already created, or if new schemes have been added.
     """
     profile = db.query(BusinessProfile).filter(BusinessProfile.id == current_user.user_id).first()
     if not profile:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail="Business profile not found."
+        user_name = current_user.name or (current_user.email.split('@')[0] if current_user.email else "User")
+        profile = BusinessProfile(
+            id=current_user.user_id,
+            email=current_user.email,
+            name=user_name,
+            company_name="My Business",
+            annual_turnover=0.0,
+            investment_in_plant_machinery=0.0,
+            number_of_employees=0,
+            business_age_years=0,
+            social_category="General",
+            gender_of_owner="Male",
+            is_minority_owned=False,
+            registrations={}
         )
-        
+        db.add(profile)
+        db.commit()
+        db.refresh(profile)
+
+    active_schemes_count = db.query(Scheme).filter(Scheme.is_active == True).count()
+    
     query = db.query(Recommendation).options(
         joinedload(Recommendation.scheme)
     ).filter(
         Recommendation.user_id == current_user.user_id
     ).order_by(Recommendation.match_score.desc())
     
-    if limit:
-        query = query.limit(limit)
-    
     recs = query.all()
-    if not recs:
+    # If no recommendations, or forced refresh, or new schemes registered that aren't yet in recommendations
+    if not recs or refresh or len(recs) < active_schemes_count:
         recs = recommendation_engine.generate_recommendations(db, profile)
-        if limit:
-            recs = recs[:limit]
+        
+    if limit:
+        recs = recs[:limit]
         
     explanation_updated = False
     for r in recs:
+        # Populate match_percentage
+        if getattr(r, 'match_percentage', None) is None:
+            r.match_percentage = float(r.match_score or 0.0)
+            
         if r.is_eligible and not r.recommendation_reason:
             try:
                 if not r.scheme:
@@ -96,13 +116,28 @@ def get_recommendation_analytics(
     - Total maximum benefit amount claimable
     - Scheme types (Subsidies, Loans, Grants) distribution
     - Missing documents list across all highly matching schemes
+    - Accurate business profile completion percentage
     """
     profile = db.query(BusinessProfile).filter(BusinessProfile.id == current_user.user_id).first()
     if not profile:
-        raise HTTPException(
-            status_code=status.HTTP_444_NOT_FOUND,
-            detail="Business profile not found."
+        user_name = current_user.name or (current_user.email.split('@')[0] if current_user.email else "User")
+        profile = BusinessProfile(
+            id=current_user.user_id,
+            email=current_user.email,
+            name=user_name,
+            company_name="My Business",
+            annual_turnover=0.0,
+            investment_in_plant_machinery=0.0,
+            number_of_employees=0,
+            business_age_years=0,
+            social_category="General",
+            gender_of_owner="Male",
+            is_minority_owned=False,
+            registrations={}
         )
+        db.add(profile)
+        db.commit()
+        db.refresh(profile)
         
     recs = db.query(Recommendation).options(
         joinedload(Recommendation.scheme)
@@ -116,16 +151,17 @@ def get_recommendation_analytics(
     total_benefit = 0.0
     scheme_types = {"Subsidy": 0, "Loan": 0, "Grant": 0, "Equity": 0, "Guarantee": 0}
     missing_docs = set()
-    benefit_taken = False
     
     for r in recs:
         scheme = r.scheme
         if not scheme:
             continue
         if r.is_eligible:
-            if not benefit_taken:
-                total_benefit = float(scheme.max_benefit_amount)
-                benefit_taken = True
+            if scheme.max_benefit_amount:
+                try:
+                    total_benefit += float(scheme.max_benefit_amount)
+                except (ValueError, TypeError):
+                    pass
             ftype = scheme.funding_type or "Subsidy"
             scheme_types[ftype] = scheme_types.get(ftype, 0) + 1
                 
@@ -146,23 +182,58 @@ def get_recommendation_analytics(
         "profile_completion_percentage": _calculate_completion(profile)
     }
 
-def _calculate_completion(profile: BusinessProfile) -> int:
-    fields = [
-        profile.company_name,
-        profile.entity_type,
-        profile.industry_type,
-        profile.sector,
-        profile.state,
-        profile.district,
-    ]
-    filled = sum(1 for f in fields if f)
-    # Add numerical turnover & investment checks
-    if float(profile.annual_turnover) > 0:
-        filled += 1
-    if float(profile.investment_in_plant_machinery) > 0:
-        filled += 1
-    # Registrations check
-    if profile.registrations:
-        filled += 1
+def _calculate_completion(profile: Optional[BusinessProfile]) -> int:
+    if not profile:
+        return 0
+
+    score = 0
+    # 1. Company identity (25 points max)
+    cname = (profile.company_name or "").strip()
+    if cname and cname != "My Business":
+        score += 15
+    elif cname:
+        score += 5
+
+    if profile.entity_type and profile.entity_type.strip():
+        score += 5
+    if profile.sector and profile.sector.strip() and profile.sector != "Other":
+        score += 5
+    elif profile.sector and profile.sector.strip():
+        score += 3
+
+    # 2. Financials & Size (25 points max)
+    try:
+        turnover = float(profile.annual_turnover or 0)
+        investment = float(profile.investment_in_plant_machinery or 0)
+    except (ValueError, TypeError):
+        turnover, investment = 0.0, 0.0
         
-    return int((filled / 9) * 100)
+    if turnover > 0:
+        score += 10
+    if investment > 0:
+        score += 10
+    if (profile.number_of_employees or 0) > 0 or (profile.business_age_years or 0) > 0:
+        score += 5
+
+    # 3. Location & Demographics (20 points max)
+    if profile.state and profile.state.strip():
+        score += 5
+    if profile.district and profile.district.strip():
+        score += 5
+    if profile.social_category and profile.social_category.strip():
+        score += 5
+    if profile.gender_of_owner and profile.gender_of_owner.strip():
+        score += 5
+
+    # 4. Project Concept / AI Semantic Profile (15 points max)
+    regs = profile.registrations or {}
+    projs = regs.get("projects", [])
+    if projs or (profile.project_title and profile.project_title.strip()):
+        score += 15
+
+    # 5. Registrations & Verified Docs (15 points max)
+    reg_flags = [k for k, v in regs.items() if k != "projects" and bool(v)]
+    if reg_flags:
+        score += min(15, len(reg_flags) * 5)
+    
+    return min(score, 100)
