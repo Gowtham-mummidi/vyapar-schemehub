@@ -1,12 +1,25 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, BackgroundTasks
 from sqlalchemy.orm import Session
-from app.database import get_db
+from app.database import get_db, SessionLocal
 from app.schemas import TokenData, BusinessProfileUpdate, BusinessProfileOut
 from app.services.auth_service import get_current_user
 from app.models import BusinessProfile
 from app.services.recommendation_engine import recommendation_engine
+import logging
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter()
+
+def _recalc_recs_in_background(profile_id):
+    try:
+        with SessionLocal() as bg_db:
+            p = bg_db.query(BusinessProfile).filter_by(id=profile_id).first()
+            if p:
+                recommendation_engine.generate_recommendations(bg_db, p)
+                logger.info(f"Background recommendations updated for profile {profile_id}")
+    except Exception as e:
+        logger.error(f"Background recommendation generation error: {e}")
 
 @router.get("/profile", response_model=BusinessProfileOut)
 def get_business_profile(
@@ -17,6 +30,7 @@ def get_business_profile(
     Fetches the profile for the authenticated user.
     Creates a default blank profile if one does not exist yet.
     """
+    import datetime
     profile = db.query(BusinessProfile).filter(BusinessProfile.id == current_user.user_id).first()
     if not profile:
         user_name = current_user.name or (current_user.email.split('@')[0] if current_user.email else "User")
@@ -32,9 +46,14 @@ def get_business_profile(
             social_category="General",
             gender_of_owner="Male",
             is_minority_owned=False,
-            registrations={}
+            registrations={},
+            updated_at=datetime.datetime.utcnow()
         )
         db.add(profile)
+        db.commit()
+        db.refresh(profile)
+    elif profile.updated_at is None:
+        profile.updated_at = datetime.datetime.utcnow()
         db.commit()
         db.refresh(profile)
     return profile
@@ -42,11 +61,12 @@ def get_business_profile(
 @router.put("/profile", response_model=BusinessProfileOut)
 def update_business_profile(
     profile_data: BusinessProfileUpdate,
+    background_tasks: BackgroundTasks,
     current_user: TokenData = Depends(get_current_user),
     db: Session = Depends(get_db)
 ):
     """
-    Updates the business profile and triggers recommendation engine score recalculation.
+    Updates the business profile and triggers recommendation engine score recalculation in background.
     """
     profile = db.query(BusinessProfile).filter(BusinessProfile.id == current_user.user_id).first()
     if not profile:
@@ -93,12 +113,7 @@ def update_business_profile(
     db.commit()
     db.refresh(profile)
     
-    # Recalculate recommendations in the background/sync
-    try:
-        recommendation_engine.generate_recommendations(db, profile)
-    except Exception as e:
-        # Log error but don't fail the request
-        import logging
-        logging.getLogger(__name__).error(f"Error generating recommendations after update: {str(e)}")
+    # Recalculate recommendations in the background so response is instant (under 200ms)
+    background_tasks.add_task(_recalc_recs_in_background, profile.id)
         
     return profile

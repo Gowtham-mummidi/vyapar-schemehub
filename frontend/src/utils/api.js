@@ -4,7 +4,15 @@ const isLocalhost = typeof window !== 'undefined' && (
   window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
 );
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || (
+const isHttps = typeof window !== 'undefined' && window.location.protocol === 'https:';
+const rawEnvUrl = import.meta.env.VITE_API_URL;
+
+// On production HTTPS deployments, ignore any stale localhost environment variable
+const validEnvUrl = rawEnvUrl && !(isHttps && (rawEnvUrl.includes('localhost') || rawEnvUrl.includes('127.0.0.1')))
+  ? rawEnvUrl
+  : null;
+
+const API_BASE_URL = validEnvUrl || (
   isLocalhost
     ? 'http://localhost:8000/api/v1'
     : 'https://vyapar-backend-gpow.onrender.com/api/v1'

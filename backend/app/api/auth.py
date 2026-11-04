@@ -18,6 +18,7 @@ def get_me(
     """
     profile = db.query(BusinessProfile).filter(BusinessProfile.id == current_user.user_id).first()
     
+    import datetime
     if not profile:
         # Create a default blank profile for the new authenticated user
         user_name = current_user.name or (current_user.email.split('@')[0] if current_user.email else "User")
@@ -33,14 +34,22 @@ def get_me(
             social_category="General",
             gender_of_owner="Male",
             is_minority_owned=False,
-            registrations={}
+            registrations={},
+            updated_at=datetime.datetime.utcnow()
         )
         db.add(profile)
         db.commit()
         db.refresh(profile)
-    elif (not profile.name or profile.name == "User") and current_user.name and current_user.name != "User":
-        profile.name = current_user.name
-        db.commit()
-        db.refresh(profile)
+    else:
+        changed = False
+        if (not profile.name or profile.name == "User") and current_user.name and current_user.name != "User":
+            profile.name = current_user.name
+            changed = True
+        if profile.updated_at is None:
+            profile.updated_at = datetime.datetime.utcnow()
+            changed = True
+        if changed:
+            db.commit()
+            db.refresh(profile)
         
     return profile

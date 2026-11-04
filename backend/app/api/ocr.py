@@ -101,10 +101,14 @@ def verify_document_upload(
         db.add(verification)
         
         # 5. Update profile registrations dictionary
+        import datetime
+        from sqlalchemy.orm.attributes import flag_modified
         regs = dict(profile.registrations or {})
         key = doc_type_clean.lower()
         regs[key] = (status_result == "Verified")
         profile.registrations = regs
+        profile.updated_at = datetime.datetime.utcnow()
+        flag_modified(profile, "registrations")
             
         db.commit()
         db.refresh(verification)

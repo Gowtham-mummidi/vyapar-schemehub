@@ -29,9 +29,9 @@ class BusinessProfileBase(BaseModel):
     business_age_years: int = 0
     state: Optional[str] = None
     district: Optional[str] = None
-    social_category: str = "General"
-    gender_of_owner: str = "Male"
-    is_minority_owned: bool = False
+    social_category: Optional[str] = "General"
+    gender_of_owner: Optional[str] = "Male"
+    is_minority_owned: Optional[bool] = False
     registrations: Dict[str, Any] = Field(default_factory=dict)
     project_title: Optional[str] = None
     project_description: Optional[str] = None
@@ -50,6 +50,12 @@ class BusinessProfileBase(BaseModel):
                     data[field] = 0
             if data.get('registrations') is None:
                 data['registrations'] = {}
+            if data.get('social_category') is None:
+                data['social_category'] = "General"
+            if data.get('gender_of_owner') is None:
+                data['gender_of_owner'] = "Male"
+            if data.get('is_minority_owned') is None:
+                data['is_minority_owned'] = False
         return data
 
 class BusinessProfileCreate(BusinessProfileBase):
@@ -60,7 +66,7 @@ class BusinessProfileUpdate(BusinessProfileBase):
 
 class BusinessProfileOut(BusinessProfileBase):
     id: UUID
-    updated_at: datetime
+    updated_at: Optional[datetime] = None
 
     class Config:
         from_attributes = True
@@ -95,7 +101,7 @@ class SchemeUpdate(BaseModel):
 
 class SchemeOut(SchemeBase):
     id: UUID
-    created_at: datetime
+    created_at: Optional[datetime] = None
 
     class Config:
         from_attributes = True
@@ -137,10 +143,10 @@ class OCRVerificationOut(BaseModel):
     user_id: UUID
     document_type: str
     file_url: Optional[str] = None
-    extracted_data: Dict[str, Any]
+    extracted_data: Dict[str, Any] = Field(default_factory=dict)
     verification_status: str
-    mismatch_details: Dict[str, Any]
-    verified_at: datetime
+    mismatch_details: Dict[str, Any] = Field(default_factory=dict)
+    verified_at: Optional[datetime] = None
 
     class Config:
         from_attributes = True

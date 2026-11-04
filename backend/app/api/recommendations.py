@@ -24,6 +24,7 @@ def get_user_recommendations(
     Generates recommendations on-the-fly if not already created, or if new schemes have been added.
     """
     profile = db.query(BusinessProfile).filter(BusinessProfile.id == current_user.user_id).first()
+    import datetime
     if not profile:
         user_name = current_user.name or (current_user.email.split('@')[0] if current_user.email else "User")
         profile = BusinessProfile(
@@ -38,9 +39,14 @@ def get_user_recommendations(
             social_category="General",
             gender_of_owner="Male",
             is_minority_owned=False,
-            registrations={}
+            registrations={},
+            updated_at=datetime.datetime.utcnow()
         )
         db.add(profile)
+        db.commit()
+        db.refresh(profile)
+    elif profile.updated_at is None:
+        profile.updated_at = datetime.datetime.utcnow()
         db.commit()
         db.refresh(profile)
 
@@ -123,6 +129,7 @@ def get_recommendation_analytics(
     - Accurate business profile completion percentage
     """
     profile = db.query(BusinessProfile).filter(BusinessProfile.id == current_user.user_id).first()
+    import datetime
     if not profile:
         user_name = current_user.name or (current_user.email.split('@')[0] if current_user.email else "User")
         profile = BusinessProfile(
@@ -137,9 +144,14 @@ def get_recommendation_analytics(
             social_category="General",
             gender_of_owner="Male",
             is_minority_owned=False,
-            registrations={}
+            registrations={},
+            updated_at=datetime.datetime.utcnow()
         )
         db.add(profile)
+        db.commit()
+        db.refresh(profile)
+    elif profile.updated_at is None:
+        profile.updated_at = datetime.datetime.utcnow()
         db.commit()
         db.refresh(profile)
         
