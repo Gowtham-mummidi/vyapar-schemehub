@@ -85,6 +85,11 @@ def update_business_profile(
     for key, value in update_data.items():
         setattr(profile, key, value)
         
+    import datetime
+    from sqlalchemy.orm.attributes import flag_modified
+    profile.updated_at = datetime.datetime.utcnow()
+    flag_modified(profile, "registrations")
+
     db.commit()
     db.refresh(profile)
     

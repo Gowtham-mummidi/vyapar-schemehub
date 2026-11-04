@@ -21,6 +21,7 @@ const BusinessProfile = ({ setActiveTab, refreshRecs }) => {
   const [editingProject, setEditingProject] = useState(-1);
   const [saving, setSaving] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [errorMsg, setErrorMsg] = useState('');
   const [projectMsg, setProjectMsg] = useState('');
 
   useEffect(() => {
@@ -121,6 +122,25 @@ const BusinessProfile = ({ setActiveTab, refreshRecs }) => {
     setForm(p => ({ ...p, [name]: type === 'checkbox' ? checked : value }));
   };
 
+  const buildPayload = (currentForm, currentProjects) => ({
+    company_name: (currentForm.company_name || '').trim(),
+    entity_type: currentForm.entity_type || 'Proprietorship',
+    industry_type: currentForm.industry_type || 'Manufacturing',
+    sector: currentForm.sector || 'Other',
+    annual_turnover: parseFloat(currentForm.annual_turnover) || 0,
+    investment_in_plant_machinery: parseFloat(currentForm.investment_in_plant_machinery) || 0,
+    number_of_employees: parseInt(currentForm.number_of_employees) || 0,
+    business_age_years: parseInt(currentForm.business_age_years) || 0,
+    state: currentForm.state || 'Delhi',
+    district: (currentForm.district || '').trim(),
+    social_category: currentForm.social_category || 'General',
+    gender_of_owner: currentForm.gender_of_owner || 'Male',
+    is_minority_owned: Boolean(currentForm.is_minority_owned),
+    project_title: currentProjects[0]?.title || '',
+    project_description: currentProjects.map(p => (p.description ? `${p.title}: ${p.description}` : p.title)).join('\n\n'),
+    registrations: { ...((profile?.registrations) || {}), projects: currentProjects }
+  });
+
   const addProject = async () => {
     const title = form.project_title?.trim();
     const desc = form.project_description?.trim() || '';
@@ -144,12 +164,7 @@ const BusinessProfile = ({ setActiveTab, refreshRecs }) => {
 
     // Auto-save projects to backend immediately so they are NEVER lost!
     try {
-      const payload = {
-        ...form,
-        project_title: updated[0]?.title || '',
-        project_description: updated.map(p => (p.description ? `${p.title}: ${p.description}` : p.title)).join('\n\n'),
-        registrations: { ...((profile?.registrations) || {}), projects: updated }
-      };
+      const payload = buildPayload(form, updated);
       await api.put('/business/profile', payload);
       await reloadProfile();
       refreshRecs?.();
@@ -180,12 +195,7 @@ const BusinessProfile = ({ setActiveTab, refreshRecs }) => {
 
     // Auto-save deletion
     try {
-      const payload = {
-        ...form,
-        project_title: updated[0]?.title || '',
-        project_description: updated.map(p => (p.description ? `${p.title}: ${p.description}` : p.title)).join('\n\n'),
-        registrations: { ...((profile?.registrations) || {}), projects: updated }
-      };
+      const payload = buildPayload(form, updated);
       await api.put('/business/profile', payload);
       await reloadProfile();
       refreshRecs?.();
@@ -200,6 +210,7 @@ const BusinessProfile = ({ setActiveTab, refreshRecs }) => {
     if (e) e.preventDefault();
     setSaving(true);
     setSuccess(false);
+    setErrorMsg('');
 
     try {
       // If user typed in project fields but didn't click "Add to List", automatically include it
@@ -220,20 +231,25 @@ const BusinessProfile = ({ setActiveTab, refreshRecs }) => {
         setForm(p => ({ ...p, project_title: '', project_description: '' }));
       }
 
-      const payload = {
-        ...form,
-        project_title: finalProjects[0]?.title || '',
-        project_description: finalProjects.map(p => (p.description ? `${p.title}: ${p.description}` : p.title)).join('\n\n'),
-        registrations: { ...((profile?.registrations) || {}), projects: finalProjects }
-      };
+      const payload = buildPayload(form, finalProjects);
 
       await api.put('/business/profile', payload);
       await reloadProfile();
       refreshRecs?.();
       setSuccess(true);
-      setTimeout(() => setSuccess(false), 3000);
+      setTimeout(() => setSuccess(false), 4000);
+      return true;
     } catch (err) {
       console.error('Save failed:', err);
+      const msg = err?.response?.data?.detail;
+      const displayMsg = typeof msg === 'string'
+        ? msg
+        : Array.isArray(msg)
+        ? msg.map(m => m.msg || m.message).join(', ')
+        : 'Failed to save business profile to database. Please check your network and fields.';
+      setErrorMsg(displayMsg);
+      setTimeout(() => setErrorMsg(''), 6000);
+      return false;
     } finally {
       setSaving(false);
     }
@@ -484,17 +500,20 @@ const BusinessProfile = ({ setActiveTab, refreshRecs }) => {
           </div>
         </Section>
 
-        <div className="flex items-center gap-3 pt-2">
+        <div className="flex flex-wrap items-center gap-3 pt-2">
           <button type="submit" disabled={saving} className="btn btn-primary">
             <Save className="w-4 h-4" />
-            {saving ? 'Saving...' : 'Save Profile'}
+            {saving ? 'Saving to Database...' : 'Save Profile'}
           </button>
           <button
             type="button"
+            disabled={saving}
             onClick={async () => {
-              await onSubmit();
-              refreshRecs?.();
-              setActiveTab('recommendations');
+              const ok = await onSubmit();
+              if (ok) {
+                refreshRecs?.();
+                setActiveTab('recommendations');
+              }
             }}
             className="btn btn-accent"
           >
@@ -502,9 +521,15 @@ const BusinessProfile = ({ setActiveTab, refreshRecs }) => {
             Find Schemes
           </button>
           {success && (
-            <div className="flex items-center gap-1.5 text-sm text-green-700 bg-green-50 border border-green-200 px-3 py-2 rounded-lg">
-              <CheckCircle className="w-4 h-4" />
-              Profile Saved Successfully!
+            <div className="flex items-center gap-1.5 text-sm text-green-700 bg-green-50 border border-green-200 px-3 py-2 rounded-lg font-medium shadow-xs">
+              <CheckCircle className="w-4 h-4 text-green-600" />
+              Profile Saved Successfully to Supabase!
+            </div>
+          )}
+          {errorMsg && (
+            <div className="flex items-center gap-1.5 text-sm text-red-700 bg-red-50 border border-red-200 px-3 py-2 rounded-lg font-medium shadow-xs">
+              <AlertCircle className="w-4 h-4 text-red-600" />
+              {errorMsg}
             </div>
           )}
         </div>

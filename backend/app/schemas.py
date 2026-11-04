@@ -32,9 +32,25 @@ class BusinessProfileBase(BaseModel):
     social_category: str = "General"
     gender_of_owner: str = "Male"
     is_minority_owned: bool = False
-    registrations: Dict[str, bool] = Field(default_factory=dict)
+    registrations: Dict[str, Any] = Field(default_factory=dict)
     project_title: Optional[str] = None
     project_description: Optional[str] = None
+
+    @model_validator(mode='before')
+    @classmethod
+    def sanitize_business_profile(cls, data: Any) -> Any:
+        if isinstance(data, dict):
+            for field in ['annual_turnover', 'investment_in_plant_machinery']:
+                val = data.get(field)
+                if val is None or val == "" or (isinstance(val, str) and val.strip() == ""):
+                    data[field] = Decimal("0.0")
+            for field in ['number_of_employees', 'business_age_years']:
+                val = data.get(field)
+                if val is None or val == "" or (isinstance(val, str) and val.strip() == ""):
+                    data[field] = 0
+            if data.get('registrations') is None:
+                data['registrations'] = {}
+        return data
 
 class BusinessProfileCreate(BusinessProfileBase):
     pass

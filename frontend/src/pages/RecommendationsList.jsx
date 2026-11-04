@@ -22,7 +22,7 @@ const RecommendationsList = ({ selectedScheme, setSelectedScheme, setActiveTab }
   const [eligibilityFilter, setEligibilityFilter] = useState('All'); // All, Eligible, Ineligible
 
   useEffect(() => {
-    loadRecommendations();
+    loadRecommendations(true);
   }, [profile?.updated_at, projects.length]);
 
   const loadRecommendations = async (forceRefresh = false) => {
