@@ -1,5 +1,4 @@
 import React from 'react';
-import React from 'react';
 import { CheckCircle2, XCircle, ExternalLink, ArrowRight, Sparkles, Globe } from 'lucide-react';
 
 const SchemeCard = ({ rec, onViewDetails }) => {
