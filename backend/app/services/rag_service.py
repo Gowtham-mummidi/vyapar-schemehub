@@ -16,21 +16,29 @@ class RAGService:
         self.gemini_client = None
         self.collection_name = settings.QDRANT_COLLECTION_NAME
 
-        # Initialize Qdrant Client
+        # Initialize Qdrant Client safely with fast timeout
         try:
-            if settings.QDRANT_API_KEY:
+            if settings.QDRANT_API_KEY and settings.QDRANT_HOST and "localhost" not in settings.QDRANT_HOST:
                 self.qdrant_client = QdrantClient(
                     url=settings.QDRANT_HOST,
-                    api_key=settings.QDRANT_API_KEY
+                    api_key=settings.QDRANT_API_KEY,
+                    timeout=2.0
                 )
-            else:
+                logger.info("Qdrant Cloud Client initialized.")
+            elif settings.QDRANT_HOST and settings.QDRANT_HOST not in ("localhost", "127.0.0.1"):
                 self.qdrant_client = QdrantClient(
                     host=settings.QDRANT_HOST,
-                    port=settings.QDRANT_PORT
+                    port=settings.QDRANT_PORT,
+                    timeout=2.0
                 )
-            logger.info("Qdrant Client initialized successfully.")
+                logger.info("Qdrant Remote Client initialized.")
+            else:
+                # In cloud deployments without local Qdrant, disable to prevent connection timeouts
+                self.qdrant_client = None
+                logger.info("Qdrant is disabled (no remote QDRANT_HOST configured). Running in fast in-memory search mode.")
         except Exception as e:
-            logger.warning(f"Could not connect to Qdrant ({str(e)}). Running in fallback/mock search mode.")
+            logger.warning(f"Could not connect to Qdrant ({str(e)}). Running in fallback mode.")
+            self.qdrant_client = None
 
         # Initialize Gemini Client
         try:
