@@ -46,4 +46,21 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
+// Response interceptor for user-friendly error diagnostics
+api.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.message === 'Network Error') {
+      const isHttps = typeof window !== 'undefined' && window.location.protocol === 'https:';
+      const isLocalhostApi = API_BASE_URL.includes('localhost') || API_BASE_URL.includes('127.0.0.1');
+      if (isHttps && isLocalhostApi) {
+        error.message = 'Backend API is offline or unreachable. Frontend is deployed on HTTPS, but backend URL is pointing to localhost:8000. Start backend locally or deploy it to Render.';
+      } else {
+        error.message = 'Cannot connect to backend server. Please verify the backend is running at ' + API_BASE_URL;
+      }
+    }
+    return Promise.reject(error);
+  }
+);
+
 export default api;
