@@ -353,7 +353,7 @@ class RAGService:
             
         try:
             response = self.gemini_client.models.generate_content(
-                model='gemini-3.1-flash-lite',
+                model='gemini-2.0-flash-lite',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=system_instruction,
@@ -439,7 +439,7 @@ class RAGService:
 
         try:
             response = self.gemini_client.models.generate_content(
-                model='gemini-3.1-flash-lite',
+                model='gemini-2.0-flash-lite',
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     temperature=0.3

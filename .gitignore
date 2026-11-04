@@ -51,3 +51,14 @@ frontend/.env
 Thumbs.db
 .vscode/
 .idea/
+
+# Media & Large files (exceeds GitHub limits)
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3

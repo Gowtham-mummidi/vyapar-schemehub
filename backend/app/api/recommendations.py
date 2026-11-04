@@ -62,10 +62,12 @@ def get_user_recommendations(
         
     explanation_updated = False
     for r in recs:
-        # Populate match_percentage
+        # Populate match_percentage from match_score for schema serialization
         if getattr(r, 'match_percentage', None) is None:
             r.match_percentage = float(r.match_score or 0.0)
-            
+
+        # Only generate RAG explanation when reason is completely missing
+        # and avoid overwriting the structured reason set by generate_recommendations
         if r.is_eligible and not r.recommendation_reason:
             try:
                 if not r.scheme:
@@ -73,7 +75,9 @@ def get_user_recommendations(
                 r.recommendation_reason = rag_service.generate_explanation(profile, r.scheme, r.eligibility_reasons)
                 explanation_updated = True
             except Exception:
-                pass
+                # Fallback: build a simple reason from the score and eligibility
+                score = float(r.match_score or 0)
+                r.recommendation_reason = f"✨ {int(round(score))}% Match: Eligible based on your business profile."
     if explanation_updated:
         db.commit()
         
