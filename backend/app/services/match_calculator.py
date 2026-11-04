@@ -312,3 +312,4 @@ def calculate_comprehensive_match(
     reason = f"✨ {int(round(final_score))}% Match ({quality}): {aspect_str}."
 
     return final_score, aspects, reason
+

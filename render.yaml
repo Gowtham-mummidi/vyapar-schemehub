@@ -15,7 +15,7 @@ services:
       - key: API_V1_STR
         value: "/api/v1"
       - key: DATABASE_URL
-        value: "postgresql://msme_user:VyaparSchemeHub2026!@db.dwtsntjkysxlqluouhbr.supabase.co:5432/postgres"
+        value: "postgresql+psycopg2://msme_user:VyaparSchemeHub2026!@db.dwtsntjkysxlqluouhbr.supabase.co:5432/postgres"
       - key: QDRANT_PORT
         value: "443"
       - key: QDRANT_COLLECTION_NAME

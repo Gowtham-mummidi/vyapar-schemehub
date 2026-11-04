@@ -8,6 +8,18 @@ db_url = settings.DATABASE_URL
 if db_url.startswith("postgres://"):
     db_url = db_url.replace("postgres://", "postgresql://", 1)
 
+# Ensure proper DBAPI driver is selected if not explicitly given
+if db_url.startswith("postgresql://") and "+" not in db_url.split("://")[0]:
+    try:
+        import psycopg2
+        db_url = db_url.replace("postgresql://", "postgresql+psycopg2://", 1)
+    except ImportError:
+        try:
+            import psycopg
+            db_url = db_url.replace("postgresql://", "postgresql+psycopg://", 1)
+        except ImportError:
+            pass
+
 connect_args = {}
 if db_url.startswith("sqlite"):
     connect_args["check_same_thread"] = False
